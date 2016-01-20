@@ -56,6 +56,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
 
     private static final String NAVIGATION_BAR_CATEGORY = "navbar_category";
     private static final String NAVIGATION_BAR_RECENTS_STYLE = "navbar_recents_style";
+    private static final String NAVIGATION_BAR_TABLET_STYLE = "enable_tablet_navigation";
     private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
     private static final String NETWORK_TRAFFIC_UNIT = "network_traffic_unit";
     private static final String NETWORK_TRAFFIC_PERIOD = "network_traffic_period";
@@ -87,6 +88,12 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         final boolean showNavBar = DeviceUtils.deviceSupportNavigationBar(getActivity());
         final PreferenceCategory navbarCategory =
                 (PreferenceCategory) prefScreen.findPreference(NAVIGATION_BAR_CATEGORY);
+
+        // Navigationbar catagory will not be displayed when the device is not a tablet
+        // or the device has physical keys
+        if ((!DeviceUtils.deviceSupportNavigationBar(getActivity())) || !DeviceUtils.isTablet(getActivity())) {
+            prefScreen.removePreference(findPreference(NAVIGATION_BAR_TABLET_STYLE));
+        }
 
         mNavbarRecentsStyle = (ListPreference) findPreference(NAVIGATION_BAR_RECENTS_STYLE);
         int recentsStyle = Settings.System.getInt(resolver,

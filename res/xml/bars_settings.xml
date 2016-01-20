@@ -106,6 +106,12 @@
                 android:entries="@array/navbar_recents_style_entries"
                 android:entryValues="@array/navbar_recents_style_values"
                 android:persistent="false"/>
+
+            <com.android.settings.preference.SystemCheckBoxPreference
+                android:key="enable_tablet_navigation"
+                android:title="@string/enable_tablet_navigation_title"
+                android:summary="@string/enable_tablet_navigation_summary"
+                android:defaultValue="false" />
         </PreferenceCategory>
 
 </PreferenceScreen>

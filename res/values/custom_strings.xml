@@ -183,6 +183,9 @@
     <string name="omniswitch_dialog_running">OmniSwitch is not running. Please make sure to enable it before enabling it as recents.</string>
     <string name="omniswitch_dialog_unavail">OmniSwitch is not installed.</string>
     <string name="omniswitch_title">OmniSwitch</string>
+    <!-- Enable Tablet Style navigation bar -->
+    <string name="enable_tablet_navigation_title">Use tablet layout</string>
+    <string name="enable_tablet_navigation_summary">Tablet layout shows back and home on the left side and overview on the right side of the navigation bar</string>
 
     <string name="doze_brightness_level_title">Brightness level</string>
 
@@ -222,5 +225,4 @@
     <!-- Status Bar Activity Indicators -->
     <string name="status_bar_network_activity_title">Activity indicators</string>
     <string name="status_bar_network_activity_summary">Show indicators in signal bars</string>
-
 </resources>
