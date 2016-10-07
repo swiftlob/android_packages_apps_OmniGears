@@ -16,7 +16,7 @@
  -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
+<!--
     <PreferenceCategory
         android:key="lockscreen_shortcut"
         android:title="@string/lockscreen_shortcut_title" >
@@ -54,24 +54,24 @@
             android:persistent="false"
             android:dependency="lockscreen_shortcuts_enable" />
     </PreferenceCategory>
-
+-->
     <PreferenceCategory
         android:key="lockscreen_other"
         android:title="@string/other_category" >
-
+<!--
         <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="lockscreen_indicator_display"
             android:title="@string/lockscreen_indicator_display_title"
             android:summary="@string/lockscreen_indicator_display_summary"
             android:defaultValue="true" />
-
-        <com.android.settings.preference.SecureSettingSwitchPreference
+-->
+        <org.omnirom.omnigears.preference.SecureSettingSwitchPreference
             android:key="lockscreen_qs_disabled"
             android:title="@string/lockscreen_qs_disabled_title"
             android:summary="@string/lockscreen_qs_disabled_summary"/>
 
     </PreferenceCategory>
-
+<!--
     <PreferenceCategory
         android:key="lockscreen_wallpaper"
         android:title="@string/lockscreen_wallpaper_title" >
@@ -143,5 +143,5 @@
             android:dependency="lockscreen_clock_enable" />
 
     </PreferenceCategory>
-
+-->
 </PreferenceScreen>

@@ -14,6 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+*/
 package org.omnirom.omnigears.interfacesettings;
 
 import android.app.Activity;
@@ -25,16 +26,16 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
+import android.support.v7.preference.CheckBoxPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -44,7 +45,7 @@ import org.omnirom.omnigears.preference.AppMultiSelectListPreference;
 import org.omnirom.omnigears.preference.FontPreference;
 import org.omnirom.omnigears.preference.NumberPickerPreference;
 import org.omnirom.omnigears.preference.ColorPickerPreference;
-import org.omnirom.omnigears.ui.ShortcutDialog;
+//import org.omnirom.omnigears.ui.ShortcutDialog;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,7 +55,7 @@ import java.util.List;
 
 public class LockscreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
-    public static final int IMAGE_PICK = 1;
+/*    public static final int IMAGE_PICK = 1;
 
     private static final String KEY_WALLPAPER_SET = "lockscreen_wallpaper_set";
     private static final String KEY_WALLPAPER_CLEAR = "lockscreen_wallpaper_clear";
@@ -76,10 +77,10 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mClockDisplayDate;
     private CheckBoxPreference mClockDisplayAlarm;
     private Preference mShortcuts;
-
+*/
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.OMNI_SETTINGS;
+        return MetricsEvent.OMNI_SETTINGS;
     }
 
     @Override
@@ -87,7 +88,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_settings);
 
-        mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
+/*        mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
         mClearWallpaper = (Preference) findPreference(KEY_WALLPAPER_CLEAR);
 
         mClockFont = (FontPreference) findPreference(KEY_CLOCK_FONT);
@@ -132,11 +133,12 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
         mClockDisplayAlarm.setChecked((clockDisplay & Settings.System.LOCK_CLOCK_ALARM) == Settings.System.LOCK_CLOCK_ALARM);
 
         mShortcuts = findPreference(KEY_SHORTCUTS);
+*/
     }
 
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        ContentResolver resolver = getContentResolver();
+    public boolean onPreferenceTreeClick(Preference preference) {
+/*        ContentResolver resolver = getContentResolver();
         if (preference == mSetWallpaper) {
             setKeyguardWallpaper();
             return true;
@@ -162,18 +164,19 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
             d.show();
             return true;
         }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+*/
+        return super.onPreferenceTreeClick(preference);
     }
-
+/*
     private int getCurrentClockDisplayValue() {
         return (mClockDisplayTime.isChecked() ? Settings.System.LOCK_CLOCK_TIME : 0) +
             (mClockDisplayDate.isChecked() ? Settings.System.LOCK_CLOCK_DATE : 0) +
             (mClockDisplayAlarm.isChecked() ? Settings.System.LOCK_CLOCK_ALARM : 0);
     }
-
+*/
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getContentResolver();
+/*        ContentResolver resolver = getContentResolver();
         if (preference == mClockFont) {
             String value = (String) newValue;
             int valueIndex = mClockFont.findIndexOfValue(value);
@@ -188,9 +191,10 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
             mClockSize.setSummary(String.valueOf(value));
             Settings.System.putInt(resolver, Settings.System.LOCK_CLOCK_SIZE, value);
         }
+*/
         return true;
     }
-
+/*
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == IMAGE_PICK && resultCode == Activity.RESULT_OK) {
@@ -217,7 +221,7 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
         wallpaperManager = WallpaperManager.getInstance(getActivity());
         wallpaperManager.clearKeyguardWallpaper();
     }
-
+*/
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
@@ -239,4 +243,4 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
                     return result;
                 }
             };
-}*/
+}
