@@ -17,6 +17,7 @@
 */
 package org.omnirom.omnigears;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.content.Context;
@@ -45,9 +46,12 @@ import java.util.HashMap;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
+
+import static android.provider.Settings.System.VOLUME_BUTTON_WAKE;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.omni.OmniSwitchConstants;
@@ -820,7 +824,41 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private boolean isOmniSwitchInstalled() {
         return PackageUtils.isAvailableApp(OmniSwitchConstants.APP_PACKAGE_NAME, getActivity());
     }
+*/
 
+    private static class SummaryProvider implements SummaryLoader.SummaryProvider {
+        private final Context mContext;
+        private final SummaryLoader mLoader;
+
+        private SummaryProvider(Context context, SummaryLoader loader) {
+            mContext = context;
+            mLoader = loader;
+        }
+
+        @Override
+        public void setListening(boolean listening) {
+            if (listening) {
+                updateSummary();
+            }
+        }
+
+        private void updateSummary() {
+            boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
+                    VOLUME_BUTTON_WAKE, 0) == 1;
+            mLoader.setSummary(this, mContext.getString( enabled ? R.string.button_volume_wake_enabled_summary
+                        : R.string.button_volume_wake_disabled_summary)); 
+        }
+    }
+
+    public static final SummaryLoader.SummaryProviderFactory SUMMARY_PROVIDER_FACTORY
+            = new SummaryLoader.SummaryProviderFactory() {
+        @Override
+        public SummaryLoader.SummaryProvider createSummaryProvider(Activity activity,
+                                                                   SummaryLoader summaryLoader) {
+            return new SummaryProvider(activity, summaryLoader);
+        }
+    };
+/*
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override

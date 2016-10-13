@@ -63,6 +63,8 @@
     <string name="button_volume_keys_title">Volume</string>
     <string name="button_volume_wake_title">Button wake</string>
     <string name="button_volume_wake_summary">Pressing a volume button will wake the device</string>
+    <string name="button_volume_wake_enabled_summary">Volume button wake is ON</string>
+    <string name="button_volume_wake_disabled_summary">Volume button wake is OFF</string>
     <string name="volume_button_music_control_title">Music control</string>
     <string name="volume_button_music_control_summary">Long press volume buttons to switch tracks while screen off</string>
     <string name="keys_action_sleep">Go to sleep</string>
@@ -342,7 +344,9 @@
     <string name="screenshot_crop_behavior_summary"></string>-->
 
     <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
-    <string name="lockscreen_qs_disabled_summary">Disable shortcuts and expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_summary">Disable shortcuts and expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_summary">Quick settings access on lock screen is ENABLED</string>
+    <string name="lockscreen_qs_enabled_summary">Quick settings access on lock screen is DISABLED</string>
 
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -402,4 +406,7 @@
     <string name="status_bar_ime_notification_summary">If navigation bar is not available</string>
     <string name="navigation_bar_ime_button_title">Show IME navigation bar button</string>
     <string name="navigation_bar_ime_button_summary">Input switcher in navigation bar</string>
+    <!-- Summaries -->
+    <string name="bars_brightness_summary">Brightness control is</string>
+    <string name="bars_dt2s_summary">DT2S is</string>
 </resources>
