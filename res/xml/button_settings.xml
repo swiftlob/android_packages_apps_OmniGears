@@ -259,12 +259,12 @@
             android:entries="@array/navbar_recents_style_entries"
             android:entryValues="@array/navbar_recents_style_values"
             android:persistent="false"/>
-
+-->
         <org.omnirom.omnigears.preference.SystemCheckBoxPreference
             android:key="button_back_kill_enable"
             android:title="@string/button_back_kill_enable_title"
             android:summary="@string/button_back_kill_enable_summary"
-            android:defaultValue="true"/>
+            android:defaultValue="false"/>
 
         <ListPreference
             android:key="button_back_kill_timeout"
@@ -273,7 +273,7 @@
             android:entryValues="@array/button_back_kill_timeout_values"
             android:persistent="false"
             android:dependency="button_back_kill_enable"/>
--->
+
         <PreferenceScreen
             android:key="global_actions"
             android:title="@string/global_actions_title"

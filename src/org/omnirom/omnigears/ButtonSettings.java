@@ -92,7 +92,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
     private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
 //    private static final String NAVIGATION_BAR_RECENTS_STYLE = "navbar_recents_style";
-//    private static final String BUTTON_BACK_KILL_TIMEOUT = "button_back_kill_timeout";
+    private static final String BUTTON_BACK_KILL_TIMEOUT = "button_back_kill_timeout";
 
     // Available custom actions to perform on a key press.
 //    private static final int ACTION_NOTHING = 0;
@@ -121,7 +121,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //    private CheckBoxPreference mHomeAnswerCall;
     private CheckBoxPreference mSwapVolumeButtons;
 //    private ListPreference mVolumeKeyCursorControl;
-//    private SwitchPreference mEnableCustomBindings;
+    private SwitchPreference mEnableCustomBindings;
 //    private ListPreference mBackPressAction;
 //    private ListPreference mBackLongPressAction;
 //    private ListPreference mHomePressAction;
@@ -148,7 +148,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //    private PreferenceCategory mKeysAppSwitchCategory;
 //    private PreferenceCategory mKeysAssistCategory;
 //    private ListPreference mNavbarRecentsStyle;
-//    private ListPreference mBackKillTimeout;
+    private ListPreference mBackKillTimeout;
 
     @Override
     protected int getMetricsCategory() {
@@ -471,7 +471,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         mNavbarRecentsStyle.setValue(Integer.toString(recentsStyle));
         mNavbarRecentsStyle.setSummary(mNavbarRecentsStyle.getEntry());
         mNavbarRecentsStyle.setOnPreferenceChangeListener(this);
-
+*/
         mBackKillTimeout = (ListPreference) findPreference(BUTTON_BACK_KILL_TIMEOUT);
         final int backKillTimeoutDefault = res.getInteger(com.android.internal.R.integer.config_backKillTimeout);
         final int backKillTimeout = Settings.System.getInt(resolver,
@@ -479,7 +479,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         mBackKillTimeout.setValue(Integer.toString(backKillTimeout));
         mBackKillTimeout.setSummary(mBackKillTimeout.getEntry());
-        mBackKillTimeout.setOnPreferenceChangeListener(this);*/
+        mBackKillTimeout.setOnPreferenceChangeListener(this);
 
 //        final PreferenceCategory headsethookCategory =
 //                (PreferenceCategory) prefScreen.findPreference(CATEGORY_HEADSETHOOK);
@@ -546,13 +546,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-/*        if (preference == mEnableCustomBindings) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEY_REBINDING,
-                    value ? 1 : 0);
-            boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
-                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
-            updateDisableHWKeyEnablement(harwareKeysDisable);
+        if (preference == mEnableCustomBindings) {
+//            boolean value = (Boolean) newValue;
+//            Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEY_REBINDING,
+//                    value ? 1 : 0);
+//            boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
+//                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+//            updateDisableHWKeyEnablement(harwareKeysDisable);
             return true;
 //        } else if (preference == mVolumeKeyCursorControl) {
 //            String volumeKeyCursorControl = (String) newValue;
@@ -562,7 +562,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //            int index = mVolumeKeyCursorControl.findIndexOfValue(volumeKeyCursorControl);
 //            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntries()[index]);
 //            return true;
-        } else if (preference == mBackPressAction) {
+/*        } else if (preference == mBackPressAction) {
             int value = Integer.valueOf((String) newValue);
             int index = mBackPressAction.findIndexOfValue((String) newValue);
             mBackPressAction.setSummary(
@@ -699,14 +699,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             int index = mNavbarRecentsStyle.findIndexOfValue((String) newValue);
             mNavbarRecentsStyle.setSummary(mNavbarRecentsStyle.getEntries()[index]);
             Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_RECENTS, value);
-            return true;
+            return true;*/
         } else if (preference == mBackKillTimeout) {
             int value = Integer.valueOf((String) newValue);
             int index = mBackKillTimeout.findIndexOfValue((String) newValue);
             mBackKillTimeout.setSummary(mBackKillTimeout.getEntries()[index]);
             Settings.System.putInt(getContentResolver(), Settings.System.BUTTON_BACK_KILL_TIMEOUT, value);
             return true;
-        } */
+        }
         return false;
     }
 
@@ -786,8 +786,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
 //        mVirtualKeyHapticFeedback.setEnabled(!harwareKeysDisable);
 //        mForceShowOverflowMenu.setEnabled(!harwareKeysDisable);
-//        mEnableCustomBindings.setEnabled(!harwareKeysDisable);
-        mButtonBrightness.setEnabled(!harwareKeysDisable);
+
+          mEnableCustomBindings.setEnabled(!harwareKeysDisable);
+          mButtonBrightness.setEnabled(!harwareKeysDisable);
 //        mKeysHomeCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
 //        mKeysBackCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
 //        mKeysMenuCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
