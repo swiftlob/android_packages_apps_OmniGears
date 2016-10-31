@@ -520,6 +520,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
+            // remove hw button disable if we disable navbar
+            if (!checked) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.HARDWARE_KEYS_DISABLE, 0);
+                mDisabkeHWKeys.setChecked(false);
+            }
             return true;
         } else if (preference == mDisabkeHWKeys) {
             boolean checked = ((SwitchPreference)preference).isChecked();
