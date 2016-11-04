@@ -25,4 +25,16 @@
         android:dialogTitle="@string/device_hostname"
         android:persistent="false" />
 
+        <PreferenceCategory
+            android:key="category_other"
+            android:title="@string/other_category">
+
+            <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+                android:key="screenshot_crop_and_share"
+                android:title="@string/screenshot_crop_and_share_title"
+                android:summary="@string/screenshot_crop_and_share_summary"
+                android:defaultValue="false" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>
