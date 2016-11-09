@@ -61,7 +61,16 @@
   <string name="button_home_wake_summary">Нажатие кнопки \"Домой\" разбудит ваше устройство</string>
   <string name="button_home_answers_call_title">Кнопка отвечает на вызов</string>
   <string name="button_home_answers_call_summary">Нажатие кнопки домой ответит на входящий вызов</string>
+  <string name="button_other_title">Другие</string>
+  <string name="keys_action_app_switch_short">По умолчанию</string>
+  <string name="keys_action_omniswitch_short">OmniSwitch</string>
+  <string name="button_back_kill_enable_title">Кнопка \"Назад\" закроет приложение</string>
+  <string name="button_back_kill_timeout_500ms">500 мс</string>
+  <string name="button_back_kill_timeout_1000ms">1000 мс</string>
+  <string name="button_back_kill_timeout_1500ms">1500 мс</string>
   <!-- Double tap to sleep -->
+  <string name="double_tap_to_sleep_title">Двойное нажатие для выключения</string>
+  <string name="double_tap_to_sleep_summary">Двойное нажатие на строке состояния выключает экран</string>
   <!-- Doze pulse (ambient display) options -->
   <string name="doze_overwrite_value_title">Перезаписать значение</string>
   <string name="doze_overwrite_value_summary">Позволять заменять значение по умолчанию пользовательским</string>
@@ -126,17 +135,24 @@
   <string name="led_color_green">Зелёный</string>
   <string name="led_color_red">Красный</string>
   <string name="led_color_blue">Синий</string>
+  <string name="statusbar_title">Панель уведомлений</string>
+  <string name="statusbar_battery_summary">Задать стиль аккумулятора в строке состояния</string>
   <string name="battery_style_title">Стиль</string>
   <string name="battery_percent_title">Показывать проценты</string>
   <string name="battery_percent_none">Никогда</string>
   <string name="battery_percent_always">Всегда</string>
   <string name="battery_percent_expanded">Широкий</string>
+  <string name="statusbar_charging_image_title">Анимация зарядки</string>
+  <string name="statusbar_category_charging_title">Зарядка</string>
+  <string name="statusbar_battery_charging_color_title">Цвет</string>
+  <string name="button_backlight_title">Подсветка кнопок</string>
   <string name="button_timeout_title">Время работы подсветки</string>
   <string name="button_timeout_summary">Отклычено при значении \"0\"</string>
   <string name="button_link_brightness">В соответствии с экраном</string>
   <string name="button_link_brightness_summary">Использовать яркость экрана</string>
   <string name="button_manual_brightness">Уровень яркости</string>
   <string name="unit_sec">сек.</string>
+  <string name="button_backlight_enable_title">Включить</string>
   <string name="navigation_bar_show_title">Показывать панель навигации</string>
   <string name="navigation_bar_show_summary">Принудительно включить панель навигации</string>
   <string name="hardware_keys_disable_title">Выключить аппаратные ключи</string>
@@ -145,15 +161,70 @@
   <string name="navbar_recents_style_title">Стиль списка запущенных приложений</string>
   <string name="omniswitch_settings">Настройки</string>
   <string name="omniswitch_dialog_unavail">OmniSwitch не установлен.</string>
+  <string name="omniswitch_title">Стиль списка запущенных приложений</string>
+  <string name="doze_brightness_level_title">Уровень яркости</string>
   <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Обои</string>
+  <string name="lockscreen_wallpaper_set_title">Установить обои экрана блокировки</string>
+  <string name="reset_lockscreen_wallpaper">По умолчанию</string>
   <!-- Lock screen config -->
+  <string name="lockscreen_shortcut_title">Ярлыки</string>
+  <string name="lockscreen_voice_shortcut_summary">Показать голосового помощника вместо звонилки</string>
+  <string name="lockscreen_shortcuts_enable_title">Включить</string>
+  <string name="lockscreen_clock">Часы</string>
+  <string name="lockscreen_clock_font_title">Шрифт времени</string>
+  <string name="lockscreen_clock_size_title">Размер часов</string>
+  <string name="lockscreen_shortcut_add_dialog_title">Добавить ярлык</string>
+  <string name="lockscreen_shortcut_apps_title">Ярлыки</string>
+  <string name="lockscreen_camera_shortcut_enable_title">Показать значок камеры</string>
+  <string name="notification_title">Панель уведомлений</string>
+  <string name="status_bar_custom_header_title">Пользовательский заголовок изображения</string>
   <!-- Network traffic -->
+  <string name="network_traffic_title">Индикатор сетевого трафика</string>
+  <string name="show_network_traffic_down">Входящий</string>
+  <string name="show_network_traffic_all">Исходящий и входящий</string>
+  <string name="show_network_traffic_bit">Бит в секунду</string>
+  <string name="show_network_traffic_byte">Байт в секунду</string>
+  <string name="show_network_traffic_500">500 мс</string>
+  <string name="show_network_traffic_1000">1000 мс</string>
+  <string name="show_network_traffic_1500">1500 мс</string>
+  <string name="show_network_traffic_2000">2000 мс</string>
+  <string name="network_traffic_autohide_title">Скрывать автоматически</string>
+  <string name="network_traffic_autohide_summary">Скрыть мониторинг трафика, когда нет никакой активности</string>
   <!-- statusbar brightness -->
+  <string name="status_bar_brightness_control_title">Управление яркостью</string>
   <!-- Status Bar Activity Indicators -->
+  <string name="quick_settings_title">Быстрые настройки</string>
+  <string name="quick_settings_summary">Выбор плиток быстрых настроек</string>
+  <string name="status_bar_icon_blacklist_title">Иконки в строке состояния</string>
+  <string name="status_bar_icon_blacklist_summary">Настроить, какие иконки будут отображаться в строке состояния</string>
+  <string name="recents_category">Запущенные приложения</string>
+  <string name="recents_search_bar_title">Показывать строку поиска</string>
+  <string name="recents_fullscreen_title">Полноэкранный режим</string>
+  <string name="weather_title">Погода</string>
   <!-- Navigationbar settings -->
+  <string name="navigationbar_title">Панель навигации</string>
   <!-- Enable Tablet Style navigation bar -->
+  <string name="enable_tablet_navigation_title">Использовать планшетный интерфейс</string>
+  <string name="other_category">Другие</string>
   <!-- Dashboard columns -->
+  <string name="dashboard_columns_phone_default">По умолчанию</string>
+  <string name="dashboard_columns_two">2</string>
+  <string name="dashboard_columns_tablet_default">По умолчанию</string>
+  <string name="dashboard_columns_three">3</string>
+  <string name="dashboard_columns_four">4</string>
+  <string name="dashboard_divider_show_title">Показывать разделитель дока</string>
   <!-- global acions config -->
+  <string name="global_actions_power_title">Включение</string>
+  <string name="global_actions_reboot_title">Перезагрузка</string>
+  <string name="global_actions_lockdown_title">Блокировка</string>
+  <string name="global_actions_settings_title">Настройки</string>
+  <string name="global_actions_airplane_title">Режим полёта</string>
+  <string name="global_actions_screenshot_title">Снимок экрана</string>
+  <string name="global_actions_screenrecord_title">Запись экрана</string>
+  <string name="global_actions_torch_title">Фонарик</string>
+  <string name="global_actions_users_title">Пользователи</string>
+  <string name="global_actions_voiceassist_title">Голосовой помощник</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
 </resources>

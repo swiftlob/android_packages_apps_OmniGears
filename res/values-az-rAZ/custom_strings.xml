@@ -19,20 +19,6 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Hardware keys -->
-  <string name="button_keys_title">מקשים</string>
-  <string name="keys_bindings_title">פעולת המקשים</string>
-  <string name="button_keys_back_title">מקש חזרה</string>
-  <string name="button_keys_home_title">מקש הבית</string>
-  <string name="button_keys_menu_title">מקש התפריט</string>
-  <string name="button_keys_assist_title">מקש החיפוש</string>
-  <string name="button_keys_appSwitch_title">מקש החלפת ישומים</string>
-  <string name="keys_enable_custom_title">פעולות מותאמות אישית</string>
-  <string name="keys_back_press_title">מקש חזרה</string>
-  <string name="keys_back_long_press_title">מקש חזור (לחיצה ארוכה)</string>
-  <string name="keys_home_press_title">מקש בית</string>
-  <string name="keys_home_long_press_title">מקש בית (לחיצה ארוכה)</string>
-  <string name="keys_home_double_tap_title">מקש בית (הקשה כפולה)</string>
-  <string name="button_back_kill_timeout_500ms">500 מילי שניות</string>
   <!-- Double tap to sleep -->
   <!-- Doze pulse (ambient display) options -->
   <!-- Swap volume buttons when the screen is rotated -->

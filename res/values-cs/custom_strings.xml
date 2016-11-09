@@ -285,4 +285,13 @@
   <string name="screenshot_crop_and_share_summary">Zobrazit okno editoru po sejmutí displeje, s cílem provést některé operace jako je oříznutí, ukládání nebo sdílení</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
+  <string name="lockscreen_qs_disabled_title">Zakázat rychlé nastavení při uzamčení</string>
+  <string name="lockscreen_qs_disabled_summary">Zakázat rozšířené rychlé nastavení na bezpečné uzamčené obrazovce</string>
+  <string name="status_bar_quick_qs_pulldown_title">Rychlé vysunutí nabídky</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Tažením dolů z %1$s strany stavového řádku bude vysunuta rychlá nabídka nastavení</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Vlevo</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Vpravo</string>
+  <string name="status_bar_quick_qs_pulldown_off">Vypnuto</string>
+  <string name="status_bar_quick_qs_pulldown_left">Vlevo</string>
+  <string name="status_bar_quick_qs_pulldown_right">Vpravo</string>
 </resources>

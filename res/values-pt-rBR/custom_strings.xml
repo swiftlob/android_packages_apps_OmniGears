@@ -281,6 +281,17 @@
   <string name="global_actions_summary">Ações mostradas no menu de energia</string>
   <string name="global_actions_header">Algumas ações são apenas visíveis, dependendo da configuração ou somente se o dispositivo é desbloqueado</string>
   <string name="font_sample_text">11:57</string>
+  <string name="screenshot_crop_and_share_title">Cortar e partilhar a captura de tela</string>
+  <string name="screenshot_crop_and_share_summary">Mostrar uma janela de edição de imagem após tirar uma captura de tela a fim de possibilitar ações como cortar, partilhar ou guardar</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
+  <string name="lockscreen_qs_disabled_title">Desativar as configurações rápidas quando bloqueado</string>
+  <string name="lockscreen_qs_disabled_summary">Desativar a expansão rápidas configurações em telas de bloqueio seguro</string>
+  <string name="status_bar_quick_qs_pulldown_title">Puxar para baixo</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Use o lado da barra de status para exibir diretamente as Configurações Rápidas</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Esquerda</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Direita</string>
+  <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
+  <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
+  <string name="status_bar_quick_qs_pulldown_right">Direita</string>
 </resources>

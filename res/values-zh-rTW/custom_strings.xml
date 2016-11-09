@@ -19,10 +19,96 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Hardware keys -->
+  <string name="button_keys_title">按鍵</string>
+  <string name="keys_bindings_title">按鍵行為</string>
+  <string name="button_keys_back_title">返回鍵</string>
+  <string name="button_keys_home_title">Home鍵</string>
+  <string name="button_keys_menu_title">選單鍵</string>
+  <string name="button_keys_assist_title">搜尋鍵</string>
+  <string name="button_keys_appSwitch_title">應用程式切換鍵</string>
+  <string name="keys_enable_custom_title">自訂行為</string>
+  <string name="keys_back_press_title">返回鍵</string>
+  <string name="keys_back_long_press_title">返回鍵 (長按)</string>
+  <string name="keys_home_press_title">Home鍵</string>
+  <string name="keys_home_long_press_title">Home鍵 (長按)</string>
+  <string name="keys_home_double_tap_title">Home鍵 (點兩下)</string>
+  <string name="keys_menu_press_title">選單鍵</string>
+  <string name="keys_menu_long_press_title">選單鍵 (長按)</string>
+  <string name="keys_assist_press_title">搜尋鍵</string>
+  <string name="keys_assist_long_press_title">搜尋鍵 (長按)</string>
+  <string name="keys_app_switch_press_title">應用程式切換鍵</string>
+  <string name="keys_app_switch_long_press_title">應用程式切換鍵 (長按)</string>
+  <string name="keys_action_nothing">無動作</string>
+  <string name="keys_action_menu">打開/關閉選單</string>
+  <string name="keys_action_app_switch">預設的最近應用程式畫面</string>
+  <string name="keys_action_search">搜尋幫手</string>
+  <string name="keys_action_voice_search">語音搜尋</string>
+  <string name="keys_action_in_app_search">應用程式內搜尋</string>
+  <string name="keys_action_home">Home鍵</string>
+  <string name="keys_action_back">返回鍵</string>
+  <string name="keys_action_last_app">切換到最後一個應用程式</string>
+  <string name="keys_action_kill_app">終止應用程式</string>
+  <string name="keys_action_normal">正常按</string>
+  <string name="keys_action_long">長按</string>
+  <string name="keys_action_double">雙擊</string>
+  <string name="dialog_no_home_key_title">沒有Home鍵預設值</string>
+  <string name="no_home_key">你未設定任何行為至Home鍵上 ! 這會導致裝置無法正常使用 !</string>
+  <string name="button_volume_keys_title">音量</string>
+  <string name="button_volume_wake_title">按鍵點亮</string>
+  <string name="button_volume_wake_summary">透過音量鍵點亮螢幕</string>
+  <string name="volume_button_music_control_title">音樂控制</string>
+  <string name="volume_button_music_control_summary">螢幕關閉狀態下，長按音量鍵切換音樂</string>
+  <string name="keys_action_sleep">進入休眠</string>
+  <string name="keys_action_omniswitch">OmniSwitch 多工介面</string>
+  <string name="button_home_wake_title">按鍵點亮</string>
+  <string name="button_home_wake_summary">按Home鍵點亮螢幕</string>
+  <string name="button_home_answers_call_title">使用按鍵接聽電話</string>
+  <string name="button_home_answers_call_summary">按Home鍵接聽電話</string>
+  <string name="button_other_title">其他</string>
+  <string name="keys_action_app_switch_short">預設</string>
+  <string name="keys_action_omniswitch_short">OmniSwitch</string>
+  <string name="button_back_kill_enable_title">長按返回鍵終止應用程式</string>
+  <string name="button_back_kill_enable_summary">長按返回鍵終止當前應用程式</string>
   <!-- Double tap to sleep -->
   <!-- Doze pulse (ambient display) options -->
+  <string name="shake_pulse_mode">晃動喝脈衝</string>
+  <string name="pulse_only_mode">脈衝(預設值)</string>
   <!-- Swap volume buttons when the screen is rotated -->
+  <string name="swap_volume_buttons_title">旋轉匹配</string>
+  <string name="swap_volume_buttons_summary">依照螢幕旋轉方向調整音量鍵的作用</string>
+  <string name="color_picker_dialog_title">顏色</string>
   <!-- Battery light settings  -->
+  <string name="battery_light_enable">啟用</string>
+  <string name="battery_low_pulse_title">電量低時閃爍</string>
+  <string name="battery_light_list_title">顏色</string>
+  <string name="battery_light_low_color_title">電量不足</string>
+  <string name="battery_light_medium_color_title">充電中</string>
+  <string name="battery_light_full_color_title">已充電 (90%)</string>
+  <string name="battery_light_really_full_color_title">已充電 (100%)</string>
+  <string name="edit_battery_settings">編輯電池設定</string>
+  <string name="notification_light_general_title">一般</string>
+  <string name="led_color_green">綠色</string>
+  <string name="led_color_red">紅色</string>
+  <string name="led_color_blue">藍色</string>
+  <string name="statusbar_title">狀態欄</string>
+  <string name="battery_title">電池顯示</string>
+  <string name="statusbar_battery_summary">設置狀態欄電池風格</string>
+  <string name="battery_style_title">風格</string>
+  <string name="battery_percent_title">顯示百分比</string>
+  <string name="battery_percent_none">不顯示</string>
+  <string name="battery_percent_always">一直顯示</string>
+  <string name="battery_percent_expanded">完全展開</string>
+  <string name="statusbar_percent_inside_title">百分比布局</string>
+  <string name="statusbar_percent_inside_summary">在電池圖示中顯示百分比</string>
+  <string name="statusbar_charging_image_title">充電提醒燈</string>
+  <string name="statusbar_category_charging_title">充電中</string>
+  <string name="statusbar_charging_image_summary">充電時顯示充電符號，並隱藏百分比。</string>
+  <string name="statusbar_battery_charging_color_title">顏色</string>
+  <string name="statusbar_battery_charging_color_enable_title">充電時的顏色</string>
+  <string name="battery_enable_title">顯示電池</string>
+  <string name="button_backlight_title">按鍵背光</string>
+  <string name="button_timeout_title">背光長亮時間</string>
+  <string name="button_timeout_summary">值為0時永遠啟用</string>
   <!-- Lock screen wallpaper -->
   <!-- Lock screen config -->
   <!-- Network traffic -->

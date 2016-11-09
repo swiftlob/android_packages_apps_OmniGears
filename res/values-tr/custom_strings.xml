@@ -40,6 +40,7 @@
   <string name="keys_app_switch_long_press_title">Uygulama geçiş tuşu (uzun basma)</string>
   <string name="keys_action_nothing">Eylem yok</string>
   <string name="keys_action_menu">Menüyü aç/kapat</string>
+  <string name="keys_action_app_switch">Varsayılan son uygulamalar</string>
   <string name="keys_action_search">Arama Yardımcısı</string>
   <string name="keys_action_voice_search">Sesli arama</string>
   <string name="keys_action_in_app_search">Uygulama içi arama</string>
@@ -55,6 +56,8 @@
   <string name="button_volume_keys_title">Ses Düzeyi</string>
   <string name="button_volume_wake_title">Düğme ile uyanma</string>
   <string name="button_volume_wake_summary">Ses ayarı düğmesine basınca cihaz uyanacak</string>
+  <string name="volume_button_music_control_title">Müzik denetimi</string>
+  <string name="volume_button_music_control_summary">Ekran kapalıyken ses düğmelerine uzun basma çalan parçayı değiştirecek</string>
   <string name="keys_action_sleep">Uyku moduna geç</string>
   <string name="keys_action_omniswitch">OmniSwitch son uygulamalar bölümü</string>
   <string name="button_home_wake_title">Düğme ile uyanma</string>
@@ -65,7 +68,7 @@
   <string name="keys_action_app_switch_short">Varsayılan</string>
   <string name="keys_action_omniswitch_short">OmniSwitch</string>
   <string name="button_back_kill_enable_title">Geri tuşu ile uygulamaları sonladır</string>
-  <string name="button_back_kill_enable_summary">Geri tuşuna uzun basarak ön planda ki uygulamarı sonlandır</string>
+  <string name="button_back_kill_enable_summary">Geri tuşuna uzun basarak ön plandaki uygulamarı sonlandır</string>
   <string name="button_back_kill_timeout_title">Uygulamaları sonlandırma zaman aşımı</string>
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
@@ -149,6 +152,7 @@
   <string name="statusbar_percent_inside_summary">Pil yüzdesini batarya simgesinin üzerinde göster</string>
   <string name="statusbar_charging_image_title">Şarj göstergesi</string>
   <string name="statusbar_category_charging_title">Şarj oluyor</string>
+  <string name="statusbar_charging_image_summary">Şarj sırasında yıldırım simgesi göster. Yüzdeyi gizler</string>
   <string name="statusbar_battery_charging_color_title">Renk</string>
   <string name="statusbar_battery_charging_color_enable_title">Şarj sırasında rengi</string>
   <string name="battery_enable_title">Pili göster</string>
@@ -163,9 +167,22 @@
   <string name="navigation_bar_show_title">Gezinti çubuğunu göster</string>
   <string name="navigation_bar_show_summary">Gezinti çubuğunu etkinleştirmeye zorla</string>
   <string name="hardware_keys_disable_title">Fiziksel tuşları devre dışı bırak</string>
+  <string name="hardware_keys_disable_summary">Fiziksel tuşları devre dışı bırakmaya zorla</string>
+  <string name="navbar_title">Gezinti çubuğu</string>
+  <string name="navbar_recents_style_title">Son uygulamalar stili</string>
+  <string name="omniswitch_settings">Ayarlar</string>
   <string name="omniswitch_dialog_running_new">OmniSwitch şu anda etkin değil. Lütfen uygulama ayarlarından etkinleştirin.</string>
+  <string name="omniswitch_dialog_unavail">OmniSwitch yüklenmedi.</string>
+  <string name="omniswitch_title">Son uygulamalar stili</string>
+  <string name="doze_brightness_level_title">Parlaklık düzeyi</string>
   <!-- Lock screen wallpaper -->
+  <string name="lockscreen_wallpaper_title">Duvar Kağıdı</string>
+  <string name="lockscreen_wallpaper_set_title">Kilit ekranı duvar kağıdını ayarla</string>
+  <string name="lockscreen_wallpaper_clear_title">Kilit ekran duvar kağıdını temizle</string>
+  <string name="reset_lockscreen_wallpaper">Varsayılana sıfırla</string>
   <!-- Lock screen config -->
+  <string name="lockscreen_shortcut_title">Kısayollar</string>
+  <string name="lockscreen_voice_shortcut_title">Sesli yardım kısayolu</string>
   <string name="lockscreen_voice_shortcut_summary">Çevirici yerine sesli yardımcı göster</string>
   <string name="lockscreen_shortcuts_enable_title">Etkinleştir</string>
   <string name="lockscreen_clock_display_time_title">Zamanı göster</string>
@@ -188,20 +205,45 @@
   <string name="lockscreen_camera_shortcut_enable_summary">Görünürlük sistem ayarına bağlıdır</string>
   <string name="lockscreen_left_shortcut_enable_title">Çevirici ya da sesli yardımcı kısayolunu göster</string>
   <string name="lockscreen_left_shortcut_enable_summary">Görünürlük sistem ayarına bağlıdır</string>
+  <string name="notification_title">Bildirim paneli</string>
+  <string name="status_bar_custom_header_title">Özel başlık görüntüsü</string>
   <string name="status_bar_custom_header_summary">Bildirim paneli başlık görüntüsünü etkinleştir</string>
   <string name="daylight_header_pack_title">Başlık görüntüsü paketi</string>
   <string name="status_bar_custom_header_shadow_title">Başlık görüntüsü gölgesi</string>
   <string name="status_bar_custom_header_shadow_summary">Parlak görüntülerde daha iyi görünürlük için</string>
   <string name="unit_percent">\u0025</string>
   <!-- Network traffic -->
+  <string name="network_traffic_title">Ağ trafiği</string>
+  <string name="show_network_traffic_state">Durum çubuğunda trafik monitörü</string>
+  <string name="show_network_traffic_unit">Görüntü birimi</string>
+  <string name="show_network_traffic_frequency">Güncelleme sıklığı</string>
+  <string name="show_network_traffic_disable">Devre dışı</string>
+  <string name="show_network_traffic_up">Giden</string>
+  <string name="show_network_traffic_down">Gelen</string>
+  <string name="show_network_traffic_all">Gelen ve giden</string>
+  <string name="show_network_traffic_bit">Bit / saniye</string>
+  <string name="show_network_traffic_byte">Bayt / saniye</string>
+  <string name="show_network_traffic_500">500 ms</string>
+  <string name="show_network_traffic_1000">1000 ms</string>
+  <string name="show_network_traffic_1500">1500 ms</string>
+  <string name="show_network_traffic_2000">2000 ms</string>
+  <string name="network_traffic_autohide_title">Otomatik gizle</string>
   <string name="network_traffic_autohide_summary">Hiçbir etkinlik yokken trafik monitörünü gizle</string>
   <string name="network_traffic_autohide_threshold">Hareketsizlik eşiği</string>
   <!-- statusbar brightness -->
+  <string name="status_bar_brightness_control_title">Parlaklık denetimi</string>
   <string name="status_bar_brightness_control_summary">Parlaklığı durum çubuğu üzerinde parmağınızı gezdirerek ayarlayın</string>
   <!-- Status Bar Activity Indicators -->
+  <string name="status_bar_network_activity_title">Etkinlik göstergeleri</string>
   <string name="status_bar_network_activity_summary">Sinyal çubuklarındaki göstergeleri göster</string>
+  <string name="quick_settings_title">Hızlı Ayarlar</string>
   <string name="quick_settings_summary">Hızlı ayarlar karelerini yapılandırma</string>
+  <string name="status_bar_icon_blacklist_title">Durum çubuğu simgeleri</string>
   <string name="status_bar_icon_blacklist_summary">Durum çubuğunda gösterilecek simgeleri yapılandırın</string>
+  <string name="recents_category">Son uygulamalar bölümü</string>
+  <string name="recents_search_bar_title">Arama çubuğunu göster</string>
+  <string name="recents_fullscreen_title">Tam ekran</string>
+  <string name="weather_title">Hava Durumu</string>
   <string name="weather_config_title">Servis ayarları</string>
   <string name="header_weather_title">Başlıkta hava durumu</string>
   <string name="header_weather_summary">Bildirim panelinde hava durumu görüntülemeyi etkinleştir</string>
@@ -209,8 +251,17 @@
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Gezinti çubuğu</string>
   <!-- Enable Tablet Style navigation bar -->
+  <string name="enable_tablet_navigation_title">Tablet düzeni kullan</string>
+  <string name="enable_tablet_navigation_summary">Tablet düzeni geri ve ana ekranı tuşunu sol tarafta ve gezinme çubuğunun sağ tarafında gösterir</string>
+  <string name="other_category">Diğer</string>
   <!-- Dashboard columns -->
   <string name="dashboard_columns_title">Sütun ayarları</string>
+  <string name="dashboard_columns_phone_default">Varsayılan</string>
+  <string name="dashboard_columns_two">2</string>
+  <string name="dashboard_columns_tablet_default">Varsayılan</string>
+  <string name="dashboard_columns_three">3</string>
+  <string name="dashboard_columns_four">4</string>
+  <string name="dashboard_colums_resize_title">Yönünü ayarlama</string>
   <string name="dashboard_colums_resize_summary">Ekran döndürüldüğünde sütunları otomatik olarak ayarla.</string>
   <string name="dashboard_divider_show_title">Sütun bölücüyü göster</string>
   <!-- global acions config -->
