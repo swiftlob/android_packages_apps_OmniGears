@@ -20,6 +20,12 @@
             android:key="bars_settings"
             android:title="@string/custom_bars_settings_title" >
 
+        <PreferenceScreen
+                android:key="category_network_traffic"
+                android:title="@string/network_traffic_title"
+                android:summary="@string/network_traffic_summary"
+                android:fragment="org.omnirom.omnigears.interfacesettings.NetworkTraffic" />
+
         <PreferenceCategory
             android:key="quick_settings_category"
             android:title="@string/quick_settings_category">
