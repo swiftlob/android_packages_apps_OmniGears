@@ -83,8 +83,11 @@
   <string name="doze_list_mode_summary">Opzione per configurare la modalità doze</string>
   <string name="doze_pulse_title">Impostazioni ora</string>
   <string name="doze_pulse_duration_in_title">Dissolvenza in ingresso</string>
+  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
+  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Dissolvenza in uscita</string>
+  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_pulse_on_notifications_title">Lampeggia per notifiche</string>
   <string name="doze_pulse_on_notifications_summary">Attivazione solo su notifiche in sospeso</string>
   <string name="doze_shake_title">Impostazioni scuotimento</string>
@@ -155,6 +158,7 @@
   <string name="statusbar_charging_image_summary">Visualizza indicatore grassetto in carica. Nascondi sovrapposizione percentuale</string>
   <string name="statusbar_battery_charging_color_title">Colore</string>
   <string name="statusbar_battery_charging_color_enable_title">Colore in carica</string>
+  <string name="statusbar_battery_charging_color_enable_summary"></string>
   <string name="battery_enable_title">Visualizza batteria</string>
   <string name="button_backlight_title">Illuminazione tasti</string>
   <string name="button_timeout_title">Timer retroilluminazione</string>
@@ -242,9 +246,12 @@
   <string name="status_bar_icon_blacklist_summary">Configura quali icone vengono visualizzate nella barra di stato</string>
   <string name="recents_category">Recenti</string>
   <string name="recents_search_bar_title">Visualizza barra di ricerca</string>
+  <string name="recents_search_bar_summary"></string>
   <string name="recents_fullscreen_title">Schermo pieno</string>
+  <string name="recents_fullscreen_summary"></string>
   <string name="weather_title">Meteo</string>
   <string name="weather_config_title">Impostazioni servizio</string>
+  <string name="weather_config_summary"></string>
   <string name="header_weather_title">Vista intestazione meteo</string>
   <string name="header_weather_summary">Abilita visualizzazione intestazione pannello notifica Meteo</string>
   <string name="weather_icon_pack_title">Pack icone condizione</string>
@@ -264,6 +271,7 @@
   <string name="dashboard_colums_resize_title">Regolazione orientamento</string>
   <string name="dashboard_colums_resize_summary">Regola automaticamente le impostazioni colonne sulla base dell\'orientamento.</string>
   <string name="dashboard_divider_show_title">Mostra il separatore di colonna</string>
+  <string name="dashboard_divider_show_summary"></string>
   <!-- global acions config -->
   <string name="global_actions_power_title">Alimentazione</string>
   <string name="global_actions_reboot_title">Riavvia</string>
@@ -285,4 +293,13 @@
   <string name="screenshot_crop_and_share_summary">Visualizza una finestra di modifica dopo aver catturato uno screenshot per fare alcune operazioni come ritaglio, salvataggio o condivisione di esso</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
+  <string name="lockscreen_qs_disabled_title">Disattivare le impostazioni rapide quando bloccato</string>
+  <string name="lockscreen_qs_disabled_summary">Disabilita le impostazioni rapide con blocco della lock screen</string>
+  <string name="status_bar_quick_qs_pulldown_title">Menù a discesa rapido</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Il bordo a %1$s della barra di stato mostra le impostazioni rapide</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Sinistra</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Destra</string>
+  <string name="status_bar_quick_qs_pulldown_off">Spento</string>
+  <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
+  <string name="status_bar_quick_qs_pulldown_right">Destra</string>
 </resources>

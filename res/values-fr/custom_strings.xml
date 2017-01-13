@@ -83,8 +83,11 @@
   <string name="doze_list_mode_summary">Option de configuration du mode veille</string>
   <string name="doze_pulse_title">Réglages temporels</string>
   <string name="doze_pulse_duration_in_title">Fondu d\'apparition</string>
+  <string name="doze_pulse_duration_in_summary"></string>
   <string name="doze_pulse_duration_visible_title">Durée de visibilité</string>
+  <string name="doze_pulse_duration_visible_summary"></string>
   <string name="doze_pulse_duration_out_title">Fondu de disparition</string>
+  <string name="doze_pulse_duration_out_summary"></string>
   <string name="doze_pulse_on_notifications_title">Clignoter pour les notifications</string>
   <string name="doze_pulse_on_notifications_summary">Activer uniquement pour les notifications en attente</string>
   <string name="doze_shake_title">Paramètres lorsque secoué</string>
@@ -155,6 +158,7 @@
   <string name="statusbar_charging_image_summary">Afficher l\'icône en gras durant la charge. Masque la superposition du pourcentage</string>
   <string name="statusbar_battery_charging_color_title">Couleur</string>
   <string name="statusbar_battery_charging_color_enable_title">Couleurs pendant la charge</string>
+  <string name="statusbar_battery_charging_color_enable_summary"></string>
   <string name="battery_enable_title">Afficher la batterie</string>
   <string name="button_backlight_title">Rétro-éclairage des boutons</string>
   <string name="button_timeout_title">Délai d\'extinction du rétro-éclairage</string>
@@ -242,9 +246,12 @@
   <string name="status_bar_icon_blacklist_summary">Configurer les icônes qui seront affichées sur la barre d\'état</string>
   <string name="recents_category">Récents</string>
   <string name="recents_search_bar_title">Afficher la barre de recherche</string>
+  <string name="recents_search_bar_summary"></string>
   <string name="recents_fullscreen_title">Plein écran</string>
+  <string name="recents_fullscreen_summary"></string>
   <string name="weather_title">Météo</string>
   <string name="weather_config_title">Paramètres de service</string>
+  <string name="weather_config_summary"></string>
   <string name="header_weather_title">Image météo de l\'en-tête</string>
   <string name="header_weather_summary">Activer l\'affichage météo de l\'en-tête sur le panneau de notification</string>
   <string name="weather_icon_pack_title">Condition des packs d\'icônes</string>
@@ -264,6 +271,7 @@
   <string name="dashboard_colums_resize_title">Réglage de l\'orientation</string>
   <string name="dashboard_colums_resize_summary">Ajuster automatiquement les colonnes des raccourcis en fonction de l\'orientation.</string>
   <string name="dashboard_divider_show_title">Afficher le séparateur de colonnes</string>
+  <string name="dashboard_divider_show_summary"></string>
   <!-- global acions config -->
   <string name="global_actions_power_title">Éteindre</string>
   <string name="global_actions_reboot_title">Redémarrer</string>
@@ -281,6 +289,17 @@
   <string name="global_actions_summary">Actions affichées dans le menu Marche/Arrêt</string>
   <string name="global_actions_header">Certaines actions sont uniquement visibles en fonction de la configuration ou seulement si l\'appareil est déverrouillé</string>
   <string name="font_sample_text">11:57</string>
+  <string name="screenshot_crop_and_share_title">Rogner &amp; partager les captures d’écran</string>
+  <string name="screenshot_crop_and_share_summary">Afficher une fenêtre d’édition après avoir pris une capture d’écran afin d’effectuer des opérations telles que rogner, sauvegarder ou partager celle-ci</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
+  <string name="lockscreen_qs_disabled_title">Désactiver les paramètres rapides au verrouillage</string>
+  <string name="lockscreen_qs_disabled_summary">Désactiver l’affichage des paramètres rapides sur l\'écran de verrouillage</string>
+  <string name="status_bar_quick_qs_pulldown_title">Accès rapide au volet des paramètres</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Glisser sur le coté %1$s de la barre de statut pour afficher les paramètres rapides</string>
+  <string name="status_bar_quick_qs_pulldown_summary_left">Gauche</string>
+  <string name="status_bar_quick_qs_pulldown_summary_right">Droite</string>
+  <string name="status_bar_quick_qs_pulldown_off">Désactivé</string>
+  <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
+  <string name="status_bar_quick_qs_pulldown_right">Droite</string>
 </resources>
