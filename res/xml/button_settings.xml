@@ -27,6 +27,12 @@
             android:title="@string/navigation_bar_show_title"
             android:summary="@string/navigation_bar_show_summary"
             android:persistent="false" />
+        <Preference
+            android:key="button_brightness"
+            android:title="@string/button_backlight_title"
+            android:summary="@string/button_backlight_summary"
+            android:persistent="false"
+            android:fragment="org.omnirom.omnigears.ButtonBrightnessSettings" />
 
     </PreferenceCategory>
 
