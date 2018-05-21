@@ -72,6 +72,18 @@
         </PreferenceCategory>
 
         <PreferenceCategory
+            android:key="category_navigationbar"
+            android:title="@string/navigationbar_title">
+
+            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
+                android:key="navigation_bar_menu_arrow_keys"
+                android:title="@string/navigation_bar_menu_arrow_keys_title"
+                android:summary="@string/navigation_bar_menu_arrow_keys_summary"
+                android:defaultValue="fale"/>
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
             android:key="aspect_ratio_category"
             android:title="@string/aspect_ratio_category_title">
 
