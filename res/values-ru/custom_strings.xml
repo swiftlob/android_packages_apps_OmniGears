@@ -656,6 +656,9 @@
   <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Настройка нижних ярлыков</string>
   <string name="long_press_power_torch_title">Длительное нажатие для включения фонарика</string>
   <string name="long_press_power_torch_summary">Включение и выключение фонарика, когда экран выключен</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Жест тремя пальцами</string>
+  <string name="three_finger_gesture_summary">Свайп тремя пальцами, чтобы сделать скриншот</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
   <string name="lockscreen_item_title">Элементы на заблокированном экране</string>
   <string name="lockscreen_item_summary">Настройка видимости элементов на экране блокировки</string>
