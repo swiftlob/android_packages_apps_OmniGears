@@ -22,7 +22,7 @@
   <string name="advanced">Avançat</string>
   <string name="profiles_add">Afegeix...</string>
   <string name="profile_choose_app">Trieu l\'app</string>
-  <string name="reset">Reestableix</string>
+  <string name="reset">Restableix</string>
   <string name="kbs">kB/s</string>
   <!-- Hardware keys -->
   <string name="button_keys_title">Botons</string>
@@ -173,7 +173,7 @@
   <string name="statusbar_battery_low_color_enable_title">Color de bateria baixa</string>
   <string name="statusbar_battery_low_color_enable_summary">Habilita un color diferent amb bateria per sota del 15%</string>
   <string name="button_backlight_title">Botó de retroil·luminació</string>
-  <string name="button_backlight_summary">Configura habilitació i brillantor</string>
+  <string name="button_backlight_summary">Configura\'n l\'habilitació i la brillantor</string>
   <string name="button_backlight_on_touch_only_title">Botó tàctil</string>
   <string name="button_backlight_on_touch_only_summary">Habilita la retroil·luminació amb temps d\'espera només en tocar un botó</string>
   <string name="button_timeout_title">Temps d\'espera de la retroil·luminació</string>
@@ -234,7 +234,7 @@
   <string name="unit_percent">\u0025</string>
   <string name="static_header_provider_title">Imatge estàtica</string>
   <string name="daylight_header_provider_title">Col·lecció d\'imatges</string>
-  <string name="custom_header_provider_title">Proveïdor de l\'encapçalament</string>
+  <string name="custom_header_provider_title">Proveïdor a la capçalera</string>
   <string name="custom_header_pick_title">Seleccioneu una imatge de capçalera</string>
   <string name="custom_header_pick_summary">Seleccioneu una imatge local o remota</string>
   <string name="style_enabled_summary">Imatge de capçalera personalitzada activa</string>
@@ -287,6 +287,7 @@
   <string name="header_weather_summary">Habilita la visualització del temps a la capçalera del tauler d\'avisos</string>
   <string name="weather_icon_pack_title">Paquet d\'icones per al temps</string>
   <string name="weather_icon_pack_note">Nota\u003a podeu instal·lar paquets d\'icones nous al Play Store cercant «Chronus icons»</string>
+  <string name="weather_icon_pack_info_title">El paquet d\'icones de meteorologia s\'utilitza als ajusts ràpids i a la pantalla de bloqueig</string>
   <!-- Navigationbar settings -->
   <string name="navigationbar_title">Barra de navegació</string>
   <!-- Enable Tablet Style navigation bar -->
@@ -325,12 +326,12 @@
   <string name="screenshot_crop_and_share_summary">Mostra una finestra d\'edició després d\'una captura de pantalla per fer algunes operacions com retallar, desar o compartir-la</string>
   <!--<string name="screenshot_crop_behavior_title"></string>
     <string name="screenshot_crop_behavior_summary"></string>-->
-  <string name="lockscreen_qs_disabled_title">Inhabilita la configuració ràpida si està bloquejat</string>
-  <string name="lockscreen_qs_disabled_summary">Inhabilita l\'expansió de la configuració ràpida a les pantalles de bloqueig segures</string>
+  <string name="lockscreen_qs_disabled_title">Inhabilita els ajusts ràpids si està bloquejat</string>
+  <string name="lockscreen_qs_disabled_summary">Inhabilita l\'expansió dels ajusts ràpids a les pantalles de bloqueig segures</string>
   <string name="lockscreen_power_menu_disabled_title">Inhabilita el menú d\'encesa si està bloquejat</string>
   <string name="lockscreen_power_menu_disabled_summary">Inhabilita el menú d\'encesa a les pantalles de bloqueig segures</string>
   <string name="status_bar_quick_qs_pulldown_title">Desplegament ràpid</string>
-  <string name="status_bar_quick_qs_pulldown_summary">La vora %1$s fa baixar els ajustaments ràpids</string>
+  <string name="status_bar_quick_qs_pulldown_summary">La vora %1$s fa baixar els ajusts ràpids</string>
   <string name="status_bar_quick_qs_pulldown_summary_left">Esquerra</string>
   <string name="status_bar_quick_qs_pulldown_summary_right">Dreta</string>
   <string name="status_bar_quick_qs_pulldown_off">Desactivat</string>
@@ -341,7 +342,7 @@
   <string name="pulse_speed_title">Durada i velocitat del parpelleig</string>
   <string name="default_time">Normal</string>
   <string name="custom_time">Usuari</string>
-  <string name="dialog_delete_title">Eliminar</string>
+  <string name="dialog_delete_title">Suprimeix</string>
   <string name="dialog_delete_message">S\'ha de suprimir l\'element seleccionat?</string>
   <!-- Values for the notification light pulse spinners -->
   <string name="pulse_length_always_on">Sempre actiu</string>
@@ -373,18 +374,18 @@
   <string name="notification_light_automagic">Color automàtic</string>
   <string name="notification_light_automagic_summary">Estableix un color adient per a l\'avís LED automàticament si l\'app no té valors personalitzats</string>
   <!-- Lights settings, LED notification -->
-  <string name="led_notification_title">Configuració de la llum</string>
+  <string name="led_notification_title">Configuració del llum</string>
   <string name="led_notification_text">Llum LED activat per la configuració</string>
-  <string name="led_category_summary_on">Avisos LED activats</string>
+  <string name="led_category_summary_on">Avisos LED actius</string>
   <string name="led_category_summary_off">Avisos LED inactius</string>
   <string name="notification_light_no_apps_summary">Activeu \'%1$s\' i premeu \'\u002b\' a la barra del menú per afegir el control per app</string>
   <!-- Hostname setting -->
   <string name="device_hostname">Nom d\'amfitrió del dispositiu</string>
   <!-- OMS -->
   <string name="theming_title">Temes</string>
-  <string name="status_bar_ime_notification_title">Mostra l\'avís IME</string>
+  <string name="status_bar_ime_notification_title">Mostra l\'avís de mètode d\'entrada</string>
   <string name="status_bar_ime_notification_summary">Si la barra de navegació no està disponible</string>
-  <string name="navigation_bar_ime_button_title">Mostra el botó IME de la barra de navegació</string>
+  <string name="navigation_bar_ime_button_title">Mostra el botó de mètode d\'entrada a la barra de navegació</string>
   <string name="navigation_bar_ime_button_summary">Commutador d\'entrada a la barra d\'estat</string>
   <!-- Summaries -->
   <string name="bars_brightness_enabled_summary">Control de brillantor activat</string>
@@ -394,9 +395,9 @@
   <string name="volume_dialog_headers_title">Capçaleres del diàleg de volum</string>
   <string name="volume_dialog_headers_summary">Mostra el nom del flux a la capçalera del diàleg de volum</string>
   <string name="lockscreen_hide_media_title">Inhabilita l\'empaperat multimèdia</string>
-  <string name="lockscreen_hide_media_summary">No mostris les metadades dels mitjans d\'empaperat a la pantalla de bloqueig</string>
-  <string name="omni_notification_light_settings_summary">Personalització dels llums LED d\'avís per a les apps</string>
-  <string name="omni_battery_light_settings_summary">Personalització dels llums LED d\'avís per a la bateria</string>
+  <string name="lockscreen_hide_media_summary">No mostris les metadades multimèdia com a fons de pantalla de la pantalla de bloqueig</string>
+  <string name="omni_notification_light_settings_summary">Personalització dels avisos de llum LED per a les apps</string>
+  <string name="omni_battery_light_settings_summary">Personalització dels avisos de llum LED per a la bateria</string>
   <string name="night_mode_title">Tema clar/fosc</string>
   <string name="night_mode_summary">%s</string>
   <string name="night_mode_no">Clar</string>
@@ -406,7 +407,7 @@
   <string name="since_charged">Carregat</string>
   <string name="since_unplugged">Desendollat</string>
   <string name="since_reset">Restableix</string>
-  <string name="since_unplug">Desendolleu</string>
+  <string name="since_unplug">Desendollat</string>
   <string name="other">Activitat</string>
   <string name="kernel_wakelocks">Wakelocks del nucli</string>
   <string name="partial_wakelocks">Wakelocks parcials</string>
@@ -429,7 +430,7 @@
   <string name="copy_as_text">Copia com a text</string>
   <string name="google_it">Cerca-ho a Google</string>
   <string name="app_details">Detalls de l\'app</string>
-  <string name="no_stat_because_reset_state">Premeu reinicia per començar a recollir dades de temps en estat</string>
+  <string name="no_stat_because_reset_state">Premeu restableix per començar a recollir dades de temps en estats</string>
   <string name="no_stat_because_reset_wakelock">Premeu reinicia per començar a recollir dades dels wakelocks</string>
   <string name="no_stat_because_plugged">Desendolleu per recollir dades dels wakelocks</string>
   <string name="no_states_file_found">No hi ha fitxer d\'estats. Segur que el telèfon és
@@ -446,11 +447,13 @@
   <string name="wakelocks_summary">Mostra les estadístiques dels wakelocks</string>
   <string name="system_category">Sistema</string>
   <string name="custom_wall_browse_title">Fons de pantalla d\'Omni</string>
-  <string name="custom_wall_browse_summary">Navega i estableix un fons de pantalla de la marca Omni</string>
+  <string name="custom_wall_browse_summary">Navega i estableix un fons de pantalla marca Omni</string>
   <string name="show_cpu_title">Mostra la informació de la CPU</string>
   <string name="show_cpu_summary">Pantalla superposada amb la informació actual de la CPU</string>
   <string name="headset_plugged_notification_title">Avís d\'auricular</string>
   <string name="headset_plugged_notification_summary">Mostra un avís en connectar auriculars per cable</string>
+  <string name="wake_when_plugged_or_unplugged_title">Desperta en endollar/desendollar</string>
+  <string name="wake_when_plugged_or_unplugged_summary">Desperta el dispositiu si s\'endolla o desendolla d\'un carregador</string>
   <!-- Display : Rotation -->
   <string name="category_display">Mostra</string>
   <string name="display_rotation_disabled">Inhabilitat</string>
@@ -463,8 +466,8 @@
   <string name="display_lockscreen_rotation_title">Pantalla de bloqueig</string>
   <string name="volume_button_force_media_title">Força el volum de multimèdia</string>
   <string name="volume_button_force_media_summary">Es canviarà el volum de multimèdia per defecte</string>
-  <string name="status_bar_logo_title">Logo de la barra d\'estat</string>
-  <string name="status_bar_logo_summary">Una mica de swag</string>
+  <string name="status_bar_logo_title">Logotip de la barra d\'estat</string>
+  <string name="status_bar_logo_summary">Una petita decoració</string>
   <!-- Doze settings editor -->
   <string name="doze_settings_title">Configuració del mode becaina</string>
   <string name="doze_settings_summary">Edició de la configuració del mode becaina</string>
@@ -486,6 +489,24 @@
   <string name="DESC_IDLE_AFTER_INACTIVE_TIMEOUT">Aquest és el temps, després que s\'acabi el temps d\'espera, que s\'esperarà cercant un moviment significatiu fins que es consideri definitivament que el dispositiu està sense ús</string>
   <string name="DESC_IDLE_PENDING_TIMEOUT">Aquest és el temps inicial, després d\'estar sense ús, que es permetrà estar en estat IDLE_PENDING, permetent que el sistema funcioni normalment fins que es torni a sense ús</string>
   <string name="DESC_MAX_IDLE_PENDING_TIMEOUT">Temps d\'espera sense ús màxim pendent (temps transcorregut en funcionament) que es permetrà utilitzar</string>
+  <string name="DESC_IDLE_PENDING_FACTOR">Factor d\'escala que s\'aplica al temps d\'espera sense ús pendent actual cada cop que passem per l\'estat</string>
+  <string name="DESC_IDLE_TIMEOUT">És el temps inicial que s\'ha d\'estar en estat sense ús abans de despertar-se novament i tornar a sense ús pendent i permetre que s\'executin els treballs normals</string>
+  <string name="DESC_MAX_IDLE_TIMEOUT">Durada màxima sense ús que es pot utilitzar</string>
+  <string name="DESC_IDLE_FACTOR">Factor d\'escala que s\'aplica al temps d\'espera sense ús actual cada cop que passem per l\'estat</string>
+  <string name="DESC_MIN_TIME_TO_ALARM">És el temps mínim que es permet fins a la pròxima alarma per poder acabar entrant en mode sense ús</string>
+  <string name="DESC_MAX_TEMP_APP_WHITELIST_DURATION">Temps màxim per posar temporalment a la llista blanca una app quan rep una càrrega elevada</string>
+  <string name="DESC_MMS_TEMP_APP_WHITELIST_DURATION">Quantitat de temps que ha d\'estar a la llista blanca una app que està rebent un MMS</string>
+  <string name="DESC_SMS_TEMP_APP_WHITELIST_DURATION">Quantitat de temps que ha d\'estar a la llista blanca una app que està rebent un SMS</string>
+  <string name="DESC_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">El temps, després de passar a inactivitat, que s\'està al primer mode sense ús lleuger</string>
+  <string name="DESC_LIGHT_PRE_IDLE_TIMEOUT">El temps que s\'esperarà des del punt que es decideix que es voldria passar a estat en repòs fins que finalment es fa, mentre s\'espera que les tasques i activitats actuals s\'acabin</string>
+  <string name="DESC_LIGHT_IDLE_TIMEOUT">El temps inicial que s\'executarà el mode de manteniment sense ús</string>
+  <string name="DESC_LIGHT_IDLE_FACTOR">Factor d\'escala que s\'aplicarà al temps en mode repòs lleuger cada cop que es completi un clcle</string>
+  <string name="DESC_LIGHT_MAX_IDLE_TIMEOUT">El temps màxim que s\'executarà el mode de manteniment sense ús</string>
+  <string name="DESC_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">La quantitat mínima de temps que estarà disponible per al mode de manteniment quan s\'estigui en repòs lleuger</string>
+  <string name="DESC_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">La quantitat mànima de temps que estarà disponible per al mode de manteniment quan s\'estigui en repòs lleuger</string>
+  <string name="DESC_MIN_LIGHT_MAINTENANCE_TIME">La quantitat mínima de temps que s\'estarà en mode manteniment després d\'un repòs lleuger</string>
+  <string name="DESC_MIN_DEEP_MAINTENANCE_TIME">La quantitat mínima de temps que s\'estarà en mode manteniment després d\'un repòs complet</string>
+  <string name="DESC_KEY_NOTIFICATION_WHITELIST_DURATION">Quantitat de temps que ha d\'estar a la llista blanca una app que està gestionant un avís</string>
   <string name="SHORT_INACTIVE_TIMEOUT">Temps d\'espera inactiu</string>
   <string name="SHORT_SENSING_TIMEOUT">Temps d\'espera de detecció</string>
   <string name="SHORT_LOCATING_TIMEOUT">Temps d\'espera de la ubicació</string>
@@ -502,11 +523,22 @@
   <string name="SHORT_MAX_TEMP_APP_WHITELIST_DURATION">Durada de la temperatura màxima de les apps de la llista blanca</string>
   <string name="SHORT_MMS_TEMP_APP_WHITELIST_DURATION">Durada màxima d\'MMS de les apps de la llista blanca</string>
   <string name="SHORT_SMS_TEMP_APP_WHITELIST_DURATION">Durada màxima d\'SMS de les apps de la llista blanca</string>
-  <string name="SHORT_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Temps d\'espera amb poc ús després d\'inactivitat</string>
-  <string name="SHORT_LIGHT_PRE_IDLE_TIMEOUT">Temps d\'espera abans de poc ús</string>
-  <string name="SHORT_LIGHT_IDLE_TIMEOUT">Temps d\'espera de poc ús</string>
-  <string name="SHORT_LIGHT_IDLE_FACTOR">Factor de poc ús</string>
+  <string name="SHORT_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Temps d\'espera de sense ús lleuger després d\'inactivitat</string>
+  <string name="SHORT_LIGHT_PRE_IDLE_TIMEOUT">Temps d\'espera abans de sense ús lleuger</string>
+  <string name="SHORT_LIGHT_IDLE_TIMEOUT">Temps d\'espera de sense ús lleuger</string>
+  <string name="SHORT_LIGHT_IDLE_FACTOR">Factor de sense ús lleuger</string>
+  <string name="SHORT_LIGHT_MAX_IDLE_TIMEOUT">Temps d\'espera de sense ús lleuger</string>
+  <string name="SHORT_LIGHT_IDLE_MAINTENANCE_MIN_BUDGET">Temps d\'espera mínim del mode manteniment sense ús lleuger</string>
+  <string name="SHORT_LIGHT_IDLE_MAINTENANCE_MAX_BUDGET">Temps d\'espera màxim del mode manteniment sense ús lleuger</string>
+  <string name="SHORT_MIN_LIGHT_MAINTENANCE_TIME">Temps d\'espera mínim del mode manteniment en mode becaina lleugera</string>
+  <string name="SHORT_MIN_DEEP_MAINTENANCE_TIME">Temps d\'espera mínim del mode manteniment en mode becaina complet</string>
+  <string name="SHORT_KEY_NOTIFICATION_WHITELIST_DURATION">Durada màxima dels avisos de la llista blanca</string>
+  <string name="logcat_app_title">MatLog</string>
+  <string name="logcat_app_summary">Inicieu l\'app per recollir els registres</string>
+  <string name="show_dashboard_columns_title">Utilitza la disposició de columnes</string>
+  <string name="show_dashboard_columns_summary">A la pàgina de configuració principal</string>
   <string name="hide_dashboard_summary_title">Oculta el resum</string>
+  <string name="hide_dashboard_summary_summary">A la pàgina de configuració principal</string>
   <string name="systemui_theme_style_title">Estil de la interfície del sistema</string>
   <string name="systemui_theme_style_auto">Basada en el fons de pantalla</string>
   <string name="systemui_theme_style_light">Estil clar</string>
@@ -545,7 +577,7 @@
   <string name="status_bar_clock">Rellotge i data</string>
   <string name="clock_title_enable">Alineació</string>
   <string name="clock_enabled">Habilitat</string>
-  <string name="clock_disabled">Desactivada</string>
+  <string name="clock_disabled">Inhabilitat</string>
   <string name="status_bar_clock_style_reset">Restaura el color</string>
   <string name="status_bar_show_clock_title">Mostra el rellotge i la data</string>
   <string name="status_bar_am_pm_title">AM/PM</string>
@@ -560,6 +592,10 @@
   <string name="clock_date_style">Estil de la data</string>
   <string name="clock_date_position">Posició de la data</string>
   <string name="clock_date_format">Format de la data</string>
+  <string name="clock_date_string_edittext_title">Ha d\'estar en format de data, com MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Introduïu una cadena</string>
+  <string name="clock_date_right">A la dreta de l\'hora</string>
+  <string name="clock_date_left">A l\'esquerra de l\'hora</string>
   <string name="am_pm_clock_normal">Mida de lletra normal</string>
   <string name="am_pm_clock_small">Mida de lletra petita</string>
   <string name="am_pm_clock_none">No ho mostris</string>
@@ -569,44 +605,98 @@
   <string name="clock_date_style_normal">Normal</string>
   <string name="clock_date_style_lowercase">Minúscules</string>
   <string name="clock_date_style_uppercase">Majúscules</string>
+  <string name="clock_date_format_custom">Format de Java personalitzat</string>
+  <string name="status_bar_clock_seconds_title">Mostra els segons</string>
   <!-- fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibració de l\'autenticació amb empremta digital</string>
+  <string name="fprint_sucess_vib_summary">Vibra en una autenticació amb empremta digital amb èxit</string>
   <string name="choose_app">Trieu l\'app</string>
   <string name="not_ready_summary">S\'està resolent...</string>
   <string name="resolve_failed_summary">L\'app de resolució ha fallat</string>
   <string name="disabled_entry">Inhabilitats</string>
   <string name="event_service_settings_title">Esdeveniments</string>
+  <string name="category_media_player_title">Reproductor multimèdia</string>
+  <string name="bt_a2dp_connect_app_list_title">Connexió Bluetooth A2DP</string>
+  <string name="headset_connect_app_list_title">Connexió d\'auriculars amb cable</string>
   <string name="event_service_enabled_title">Habilita el servei d\'esdeveniments</string>
+  <string name="event_service_running">El servei s\'està executant</string>
+  <string name="event_service_stopped">El servei no s\'està executant</string>
   <string name="category_media_player_info_title">Selecció d\'app</string>
+  <string name="media_player_autostart_title">Envia l\'esdeveniment de reproducció multimèdia després de començar</string>
+  <string name="media_player_music_active_title">No iniciïs l\'esdeveniment en reproduir</string>
+  <string name="autorun_single_app_title">Executa automàticament una sola app</string>
+  <string name="autorun_single_app_summary">No mostris el diàleg de selecció d\'app</string>
+  <string name="bt_a2dp_connect_app_list_summary">App(s) que ha(n) de sortir a la llista quan s\'iniciï un esdeveniment A2DP, com connectar uns auriculars Bluetooth</string>
+  <string name="headset_connect_app_list_summary">App(s) que ha(n) de sortir a la llista quan es connectin uns auriculars amb cable</string>
   <string name="app_chooser_left">Esquerra</string>
   <string name="app_chooser_right">Dreta</string>
+  <string name="app_chooser_timeout_title">Temps d\'espera del diàleg per triar l\'app</string>
+  <string name="app_chooser_position_title">Posició del diàleg per triar l\'app</string>
+  <string name="wired_events_threshold_title">Llindar de l\'esdeveniment d\'auriculars amb cable</string>
+  <string name="wired_events_threshold_summary">Ignora els esdeveniments d\'auricular si estan a l\'interval de temps</string>
   <!-- Quick Pulldown-->
   <string name="quick_pulldown_title">Desplegament ràpid</string>
-  <string name="quick_pulldown_summary">La vora %1$s fa baixar els ajustaments ràpids</string>
+  <string name="quick_pulldown_summary">La vora %1$s fa baixar els ajusts ràpids</string>
+  <string name="quick_pulldown_summary_always">Mostra sempre els ajusts ràpids en desplegar la barra d\'estat</string>
   <string name="quick_pulldown_off">Desactivat</string>
   <string name="quick_pulldown_left">Esquerra</string>
   <string name="quick_pulldown_right">Dreta</string>
   <string name="quick_pulldown_always">Sempre</string>
   <!-- Expanded desktop -->
   <string name="expanded_desktop_title">Escriptori ampliat</string>
-  <string name="expanded_hide_nothing">No ocultis res</string>
+  <string name="expanded_desktop_summary">Configuració per app de la barra d\'estat i de la barra de navegació</string>
+  <string name="expanded_hide_nothing">No n\'ocultis cap</string>
   <string name="expanded_hide_status">Oculta la barra d\'estat</string>
-  <string name="expanded_hide_navigation">Amaga la barra de navegació</string>
+  <string name="expanded_hide_navigation">Oculta la barra de navegació</string>
+  <string name="expanded_hide_both">Oculta ambdues</string>
+  <string name="expanded_nothing_to_show">Per afegir una configuració personalitzada per app per a l\'estat expandit, desactiveu «Habilitat per a tot»</string>
+  <string name="expanded_desktop_state">Estat expandit</string>
+  <string name="expanded_enabled_for_all">Habilitat per a tot</string>
+  <string name="expanded_user_configurable">Configurable per l\'usuari</string>
+  <string name="show_only_launcher_menu">Només apps a l\'aplicació d\'inici</string>
   <string name="show_all_apps_menu">Totes les apps</string>
   <!-- Brightness control -->
   <string name="status_bar_toggle_brightness">Control de brillantor</string>
   <string name="status_bar_toggle_brightness_summary">Ajusta la brillantor lliscant el dit per la barra d\'estat</string>
   <!-- Bottom shortcuts -->
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Dreceres inferiors</string>
+  <string name="systemui_tuner_lockscreen_bottom_shortcuts_summary">Configura les dreceres de baix</string>
+  <string name="long_press_power_torch_title">Pressió llarga per a la llanterna</string>
+  <string name="long_press_power_torch_summary">Commuta la llanterna amb la pantalla apagada</string>
   <!-- Hide lockscreen status bar, clock, date, alarm -->
+  <string name="lockscreen_item_title">Elements de la pantalla de bloqueig</string>
+  <string name="lockscreen_item_summary">Configuració de la visibilitat dels elements de la pantalla de bloqueig</string>
+  <string name="hide_lockscreen_clock_title">Oculta el giny del rellotge</string>
+  <string name="hide_lockscreen_clock_summary">Canvia la visibilitat del giny del rellotge</string>
+  <string name="hide_lockscreen_date_title">Oculta el giny de la data</string>
+  <string name="hide_lockscreen_date_summary">Canvia la visibilitat de la data a sota del giny del rellotge</string>
+  <string name="hide_lockscreen_alarm_title">Oculta el text de l\'alarma</string>
+  <string name="hide_lockscreen_alarm_summary">Canvia la visibilitat del text de l\'alarma a sota del giny del rellotge</string>
   <string name="hide_lockscreen_status_bar_title">Oculta la barra d\'estat</string>
   <string name="hide_lockscreen_status_bar_summary">Toqueu la barra d\'estat per conmutar-ne la visibilitat</string>
   <string name="hide_lockscreen_indicator_display_title">Oculta els texts d\'estat de la part inferior de la pantalla</string>
   <string name="hide_lockscreen_indicator_display_summary">Oculta la informació de càrrega i les pistes de desbloqueig</string>
+  <string name="hide_lockscreen_icon_title">Oculta la icona de bloqueig de pantalla</string>
+  <string name="hide_lockscreen_icon_summary">Canvia la visibilitat de la icona de bloqueig de pantalla</string>
+  <string name="lockscreen_weather_title">Mostra l\'estat del temps</string>
+  <string name="lockscreen_weather_summary">Mostra l\'estat actual del temps i la temperatura</string>
+  <string name="lockscreen_items_aod_info_title">La configuració d\'aquesta visibilitat també s\'aplica a la pantalla activa</string>
   <string name="system_proxi_check_enabled_title">Comprovació de proximitat</string>
+  <string name="system_proxi_check_enabled_summary">Comprova el sensor de proximitat abans de gestionar els esdeveniments de despertar amb el botó d\'encesa i el de volum</string>
+  <string name="aspect_ratio_apps_enabled_title">Habilita l\'escalat</string>
+  <string name="aspect_ratio_apps_enabled_summary">Permet que les apps antigues utilitzin la pantalla completa</string>
+  <string name="aspect_ratio_apps_list_title">Apps que poden utilitzar l\'escalat</string>
+  <string name="aspect_ratio_category_title">Escalat amb apps antigues</string>
+  <string name="aspect_ratio_apps_info">Cal reiniciar les aplicacions després dels canvis</string>
+  <string name="navigation_bar_menu_arrow_keys_title">Tecles de fletxa mentre s\'escriu</string>
+  <string name="navigation_bar_menu_arrow_keys_summary">Mostra els botons del cursor dret i esquerre mentre s\'escriu</string>
   <string name="lockscreen_clock_style_title">Estil de la pantalla del rellotge</string>
   <string name="clock_style_digital">Digital</string>
   <string name="clock_style_analog">Analògic</string>
   <string name="clock_style_binary">Binari</string>
   <string name="omni_clock_settings_title">Rellotge analògic</string>
+  <string name="omni_clock_settings_summary">Configuració d\'estil i color</string>
+  <string name="omni_clock_24h_mode_title">Mode 24h</string>
   <string name="omni_clock_show_ticks_title">Mostra les marques de les hores</string>
   <string name="omni_clock_show_numbers_title">Mostra els números de les hores</string>
   <string name="omni_clock_bg_color_title">Color de fons</string>
@@ -615,5 +705,8 @@
   <string name="omni_clock_minute_color_title">Color dels minuts</string>
   <string name="omni_clock_text_color_title">Color del text</string>
   <string name="omni_clock_accent_color_title">Color d\'èmfasi</string>
+  <string name="lockscreen_digital_clock_two_lines_title">Estil de dues línies</string>
+  <string name="lockscreen_digital_clock_bold_hour_title">Estil d\'hores en negreta</string>
   <string name="digital_clock_settings_title">Rellotge personalitzat</string>
+  <string name="digital_clock_settings_summary">Configuració de l\'estil</string>
 </resources>

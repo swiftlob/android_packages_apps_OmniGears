@@ -23,6 +23,7 @@
   <string name="profiles_add">Добавить...</string>
   <string name="profile_choose_app">Выбрать приложение</string>
   <string name="reset">Сбросить</string>
+  <string name="kbs">КБ/с</string>
   <!-- Hardware keys -->
   <string name="button_keys_title">Кнопки</string>
   <string name="keys_bindings_title">Действия кнопок</string>
@@ -684,4 +685,21 @@
   <string name="aspect_ratio_apps_info">Приложения необходимо перезапустить для применения изменений</string>
   <string name="navigation_bar_menu_arrow_keys_title">Показывать стрелки при вводе текста</string>
   <string name="navigation_bar_menu_arrow_keys_summary">Отображать левую и правую кнопки курсора при наборе текста</string>
+  <string name="lockscreen_clock_style_title">Стиль часов экрана блокировки</string>
+  <string name="clock_style_digital">Цифровой стиль</string>
+  <string name="clock_style_analog">Аналоговый стиль</string>
+  <string name="clock_style_binary">Двоичный стиль</string>
+  <string name="omni_clock_settings_title">Аналоговые часы</string>
+  <string name="omni_clock_settings_summary">Настройки стиля и цвета</string>
+  <string name="omni_clock_24h_mode_title">24-часовой формат времени</string>
+  <string name="omni_clock_bg_color_title">Цвет фона</string>
+  <string name="omni_clock_border_color_title">Цвет границы</string>
+  <string name="omni_clock_hour_color_title">Цвет часов</string>
+  <string name="omni_clock_minute_color_title">Цвет минут</string>
+  <string name="omni_clock_text_color_title">Цвет текста</string>
+  <string name="omni_clock_accent_color_title">Цвет акцента</string>
+  <string name="lockscreen_digital_clock_two_lines_title">Стиль двойной линии</string>
+  <string name="lockscreen_digital_clock_bold_hour_title">Жирный шрифт часов</string>
+  <string name="digital_clock_settings_title">Цифровые часы</string>
+  <string name="digital_clock_settings_summary">Настройки стиля</string>
 </resources>

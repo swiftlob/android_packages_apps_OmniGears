@@ -65,7 +65,7 @@
   <string name="button_volume_wake_summary">Bir ses seviyesi düğmesine basmak cihazı uyandıracak</string>
   <string name="button_volume_wake_enabled_summary">Ses seviyesi düğmesi ile uyanma AÇIK</string>
   <string name="button_volume_wake_disabled_summary">Ses seviyesi düğmesi ile uyanma KAPALI</string>
-  <string name="volume_button_music_control_title">Müzik idaresi</string>
+  <string name="volume_button_music_control_title">Müzik idâresi</string>
   <string name="volume_button_music_control_summary">Şarkıları değiştirmek için ses seviyesi düğmelerine ekran kapalıyken uzun bir müddet basın</string>
   <string name="keys_action_sleep">Uyku moduna geç</string>
   <string name="keys_action_omniswitch">OmniSwitch son uygulamalar bölümü</string>
@@ -142,7 +142,7 @@
   <string name="batterylight_title">Pil LED ışığı ayarları</string>
   <string name="battery_light_enable">Etkinleştir</string>
   <string name="battery_low_pulse_title">Pil düşükse yanıp sön</string>
-  <string name="battery_light_only_full_charge_title">Sadece tamamen şarj olduğunda yan</string>
+  <string name="battery_light_only_full_charge_title">Sadece tamâmen şarj edildiğinde yan</string>
   <string name="battery_light_list_title">Renkler</string>
   <string name="battery_light_low_color_title">Pil düşük</string>
   <string name="battery_light_medium_color_title">Şarj ediliyor</string>
@@ -268,7 +268,7 @@
   <string name="captive_portal_ignore_mode_title">Kısıtlama girişini fa\'âl hâle getir</string>
   <string name="captive_portal_ignore_mode_summary">Kısıtlama girişini fa\'âl hâle getirerek bağlanabilirlik yoklamasını fa\'âl hâle getirin</string>
   <!-- statusbar brightness -->
-  <string name="status_bar_brightness_control_title">Parlaklık idaresi</string>
+  <string name="status_bar_brightness_control_title">Parlaklık idâresi</string>
   <string name="status_bar_brightness_control_summary">Parmağınızı durum çubuğu üzerinde gezdirerek parlaklığı ayarlayın</string>
   <!-- Status Bar Activity Indicators -->
   <string name="status_bar_network_activity_title">Faaliyet göstergeleri</string>
@@ -378,7 +378,7 @@
   <string name="led_notification_text">LED ışık ayarlardan etkinleştirildi</string>
   <string name="led_category_summary_on">Bildirim LED\'i AÇIK</string>
   <string name="led_category_summary_off">Bildirim LED\'i KAPALI</string>
-  <string name="notification_light_no_apps_summary">Uygulamaya has ayar ilâve etmek için, \"%1$s\" etkinleştirin ve menü çubuğunda \'\u002b\' dokunun</string>
+  <string name="notification_light_no_apps_summary">Uygulamaya has hâkimiyet ilâve etmek için, \"%1$s\" etkinleştirin ve menü çubuğunda \'\u002b\' dokunun</string>
   <!-- Hostname setting -->
   <string name="device_hostname">Cihaz adı</string>
   <!-- OMS -->
@@ -388,8 +388,8 @@
   <string name="navigation_bar_ime_button_title">Gezinti çubuğunda giriş yöntemi düğmesini göster</string>
   <string name="navigation_bar_ime_button_summary">Gezinti çubuğunda giriş yöntemi değiştiricisi</string>
   <!-- Summaries -->
-  <string name="bars_brightness_enabled_summary">Parlaklık ayarı AÇIK</string>
-  <string name="bars_brightness_disabled_summary">Parlaklık ayarı KAPALI</string>
+  <string name="bars_brightness_enabled_summary">Parlaklık idâresi AÇIK</string>
+  <string name="bars_brightness_disabled_summary">Parlaklık idâresi KAPALI</string>
   <string name="bars_dt2s_enabled_summary">DT2S AÇIK</string>
   <string name="bars_dt2s_disabled_summary">DT2S KAPALI</string>
   <string name="volume_dialog_headers_title">Ses seviyesi iletişim kutusu başlıkları</string>
@@ -494,7 +494,7 @@
   <string name="DESC_MAX_IDLE_TIMEOUT">Kullanmamıza müsâade ettiğiniz âzamî boşta durma süresi</string>
   <string name="DESC_IDLE_FACTOR">Bu hâlden her geçtiğimiz zamanda mevcûd boşta kalma zaman aşımına uygulanacak olan ölçekleme oranı</string>
   <string name="DESC_MIN_TIME_TO_ALARM">Bu, fi\'len boşta kalma moduna geçmemiz için gelecek olan bir sonraki îkâza kadar müsâade edeceğimiz asgarî süre</string>
-  <string name="DESC_MAX_TEMP_APP_WHITELIST_DURATION">Bir uygulama yüksek bir alâka gördüğünde uygulamanın idareten istisna sayılacağı âzamî süre miktarı</string>
+  <string name="DESC_MAX_TEMP_APP_WHITELIST_DURATION">Bir uygulama yüksek bir alâka gördüğünde uygulamanın idâreten istisna sayılacağı âzamî müddet miktarı</string>
   <string name="DESC_MMS_TEMP_APP_WHITELIST_DURATION">Bir MMS alan uygulamanın istisna sayılacağı müddet miktarı</string>
   <string name="DESC_SMS_TEMP_APP_WHITELIST_DURATION">Bir SMS alan uygulamanın istisna sayılacağı müddet miktarı</string>
   <string name="DESC_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Bu, gayrî fa’âl olduktan sonra ilk hafif boşta kalma moduna girdiğimiz zamandır</string>
@@ -520,7 +520,7 @@
   <string name="SHORT_MAX_IDLE_TIMEOUT">Âzamî boşta kalma zaman aşımı</string>
   <string name="SHORT_IDLE_FACTOR">Boşta kalma sebebi</string>
   <string name="SHORT_MIN_TIME_TO_ALARM">Îkâz edilecek asgarî müddet</string>
-  <string name="SHORT_MAX_TEMP_APP_WHITELIST_DURATION">Uygulamanın idareten istisna listesinde kalacağı âzamî müddet</string>
+  <string name="SHORT_MAX_TEMP_APP_WHITELIST_DURATION">Uygulamanın idâreten istisna listesinde kalacağı âzamî müddet</string>
   <string name="SHORT_MMS_TEMP_APP_WHITELIST_DURATION">MMS uygulamasının istisna listesinde kalacağı âzamî müddet</string>
   <string name="SHORT_SMS_TEMP_APP_WHITELIST_DURATION">SMS uygulamasının istisna listesinde kalacağı âzamî müddet</string>
   <string name="SHORT_LIGHT_IDLE_AFTER_INACTIVE_TIMEOUT">Gayrî fa’âl zaman aşımından sonra hafif boşta kal</string>
@@ -656,7 +656,7 @@
   <string name="show_only_launcher_menu">Sadece başlatıcı uygulamaları</string>
   <string name="show_all_apps_menu">Bütün uygulamalar</string>
   <!-- Brightness control -->
-  <string name="status_bar_toggle_brightness">Parlaklık idaresi</string>
+  <string name="status_bar_toggle_brightness">Parlaklık idâresi</string>
   <string name="status_bar_toggle_brightness_summary">Parlaklığı durum çubuğu üzerinde parmağınızı kaydırarak ayarlayın</string>
   <!-- Bottom shortcuts -->
   <string name="systemui_tuner_lockscreen_bottom_shortcuts_title">Alt kısayollar</string>

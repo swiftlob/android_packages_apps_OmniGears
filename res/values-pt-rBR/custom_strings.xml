@@ -23,6 +23,7 @@
   <string name="profiles_add">Adicionar...</string>
   <string name="profile_choose_app">Selecione um aplicativo</string>
   <string name="reset">Redefinir</string>
+  <string name="kbs">kB/s</string>
   <!-- Hardware keys -->
   <string name="button_keys_title">Teclas</string>
   <string name="keys_bindings_title">Ação das teclas</string>
@@ -56,6 +57,7 @@
   <string name="keys_action_normal">Toque normal</string>
   <string name="keys_action_long">Toque longo</string>
   <string name="keys_action_double">Toque duplo</string>
+  <string name="keys_action_all_apps">Todas as aplicações</string>
   <string name="dialog_no_home_key_title">Nenhuma ação</string>
   <string name="no_home_key">Não há botão designado para a ação Home! O dispositivo poderá ficar inutilizável!</string>
   <string name="button_volume_keys_title">Volume</string>
@@ -81,6 +83,7 @@
   <string name="button_back_kill_timeout_500ms">500 ms</string>
   <string name="button_back_kill_timeout_1000ms">1000 ms</string>
   <string name="button_back_kill_timeout_1500ms">1500 ms</string>
+  <string name="button_back_kill_timeout_2000ms">2000 ms</string>
   <!-- Double tap to sleep -->
   <string name="double_tap_to_sleep_title">Toque duas vezes para dormir</string>
   <string name="double_tap_to_sleep_summary">Toque duas vezes na barra de status para colocar o dispositivo para dormir</string>
@@ -145,6 +148,10 @@
   <string name="battery_light_medium_color_title">Carregando</string>
   <string name="battery_light_full_color_title">Carregando (90%)</string>
   <string name="battery_light_really_full_color_title">Carregada (100%)</string>
+  <string name="fast_color_cat_title">Carregamento rápido</string>
+  <string name="fast_charging_led_enabled_title">Ativar cor de carregamento rápido</string>
+  <string name="fast_charging_led_enabled_summary">Durante o carregamento rápido, usar uma cor diferente até atingir 90% de carga</string>
+  <string name="fast_charging_light_color_title">Côr</string>
   <string name="edit_battery_settings">Editar configurações de bateria</string>
   <string name="led_color_green">Verde</string>
   <string name="led_color_red">Vermelho</string>
@@ -152,22 +159,30 @@
   <string name="statusbar_title">Barra de Status</string>
   <string name="battery_title">Monitor de bateria</string>
   <string name="statusbar_battery_summary">Definir o estilo da bateria na barra de status</string>
+  <string name="clock_title">Relógio e data</string>
+  <string name="statusbar_clock_summary">Definir estilo de exibição do relógio da barra de status</string>
   <string name="battery_style_title">Estilo</string>
   <string name="statusbar_percent_inside_title">Visualizar porcentagem</string>
+  <string name="statusbar_percent_inside_summary">Mostrar percentagem sobre o ícone da bateria</string>
   <string name="statusbar_charging_image_title">Indicador de carga</string>
   <string name="statusbar_category_charging_title">Carregando</string>
   <string name="statusbar_charging_image_summary">Exibir indicador de raio durante a carga. Isto esconde a porcentagem de bateria em amostra</string>
   <string name="statusbar_battery_charging_color_title">Cor</string>
   <string name="statusbar_battery_charging_color_enable_title">Cor durante o carregamento</string>
   <string name="battery_enable_title">Mostrar bateria</string>
+  <string name="statusbar_battery_low_color_enable_title">Cor de bateria fraca</string>
+  <string name="statusbar_battery_low_color_enable_summary">Ativar uma cor diferente se o nível de bateria for inferior a 15%</string>
   <string name="button_backlight_title">Luz de fundo dos botões</string>
+  <string name="button_backlight_summary">Configurar ativação e brilho</string>
   <string name="button_backlight_on_touch_only_title">Toque do botão</string>
+  <string name="button_backlight_on_touch_only_summary">Ativar a luz de fundo com tempo limite apenas quando o botão é tocado</string>
   <string name="button_timeout_title">Tempo limite da luz de fundo</string>
   <string name="button_timeout_summary">Desativado quando o valor é igual a 0</string>
   <string name="button_link_brightness">Ligação para a tela</string>
   <string name="button_link_brightness_summary">Use o nível de brilho da tela</string>
   <string name="button_manual_brightness">Nível do brilho</string>
   <string name="unit_sec">sec</string>
+  <string name="unit_msec">ms</string>
   <string name="button_backlight_enable_title">Ativar</string>
   <string name="navigation_bar_show_title">Mostrar barra de navegação</string>
   <string name="navigation_bar_show_summary">Forçar ativação da barra de navegação</string>
@@ -179,6 +194,10 @@
   <string name="omniswitch_dialog_running_new">O OmniSwitch não está ativado. Por favor, ative nas configurações da aplicação.</string>
   <string name="omniswitch_dialog_unavail">OmniSwitch não está instalado.</string>
   <string name="omniswitch_title">Estilo de recentes</string>
+  <string name="long_press_recents_action_title">Ação de toque longo no botão de recentes</string>
+  <string name="long_press_home_action_title">Toque longo no botão Página Inicial</string>
+  <string name="double_press_home_action_title">Ação de toque duplo no botão Página Inicial</string>
+  <string name="keys_action_recents">Recentes</string>
   <string name="doze_brightness_level_title">Nível do brilho</string>
   <!-- Lock screen config -->
   <string name="lockscreen_shortcut_title">Atalhos</string>

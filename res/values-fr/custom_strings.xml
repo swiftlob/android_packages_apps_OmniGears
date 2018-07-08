@@ -264,6 +264,7 @@
   <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
   <string name="network_traffic_enable_title">Activer</string>
   <!-- captive portal - disable connectivity check -->
+  <string name="captive_portal_ignore_mode_title">Activer le portail captif</string>
   <!-- statusbar brightness -->
   <string name="status_bar_brightness_control_title">Contrôle de la luminosité</string>
   <string name="status_bar_brightness_control_summary">Ajuster la luminosité du rétroéclairage en glissant votre doigt sur la barre d\'état</string>
