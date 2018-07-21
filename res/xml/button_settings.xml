@@ -58,6 +58,11 @@
             android:title="@string/navigation_bar_show_title"
             android:summary="@string/navigation_bar_show_summary"
             android:persistent="false" />
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
+            android:key="use_bottom_gesture_navigation"
+            android:title="@string/use_bottom_gesture_title"
+            android:summary="@string/use_bottom_gesture_summary"
+            android:defaultValue="false" />
         <SwitchPreference
             android:key="hardware_keys_disable"
             android:title="@string/hardware_keys_disable_title"
