@@ -46,7 +46,7 @@
   <string name="keys_app_switch_long_press_title">タスクキー（長押し）</string>
   <string name="keys_action_nothing">なし</string>
   <string name="keys_action_menu">メニューを開く/閉じる</string>
-  <string name="keys_action_app_switch">既定のアプリ履歴</string>
+  <string name="keys_action_app_switch">デフォルトのアプリ履歴</string>
   <string name="keys_action_search">検索アシスタント</string>
   <string name="keys_action_voice_search">音声検索</string>
   <string name="keys_action_in_app_search">アプリ内検索</string>
@@ -112,19 +112,19 @@
   <string name="twohundred_ms">200 ms</string>
   <string name="fivehundred_ms">500 ms</string>
   <string name="one_second">1秒</string>
-  <string name="one_second_default">1秒（既定）</string>
+  <string name="one_second_default">1秒（デフォルト）</string>
   <string name="onehalf_second">1.5秒</string>
   <string name="two_second">2秒</string>
   <string name="twohalf_second">2.5秒</string>
   <string name="three_second">3秒</string>
-  <string name="three_second_default">3秒（既定）</string>
+  <string name="three_second_default">3秒（デフォルト）</string>
   <string name="threehalf_second">3.5秒</string>
   <string name="four_second">4秒</string>
   <string name="fourhalf_second">4.5秒</string>
   <string name="five_second">5秒</string>
   <string name="veryeasy_shake">非常に簡単</string>
   <string name="easy_shake">簡単</string>
-  <string name="medium_shake">既定</string>
+  <string name="medium_shake">デフォルト</string>
   <string name="hard_shake">難しい</string>
   <string name="veryhard_shake">非常に難しい</string>
   <string name="strong_shake">強</string>
@@ -133,7 +133,7 @@
   <string name="pocket_pulse_mode">ポケットと点滅</string>
   <string name="pocket_only_mode">ポケット</string>
   <string name="shake_pulse_mode">シェイクと点滅</string>
-  <string name="pulse_only_mode">点滅（既定）</string>
+  <string name="pulse_only_mode">点滅（デフォルト）</string>
   <!-- Swap volume buttons when the screen is rotated -->
   <string name="swap_volume_buttons_title">回転時のボタン位置</string>
   <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替える</string>
@@ -296,9 +296,9 @@
   <string name="other_category">その他</string>
   <!-- Dashboard columns -->
   <string name="dashboard_columns_title">列の設定</string>
-  <string name="dashboard_columns_phone_default">既定</string>
+  <string name="dashboard_columns_phone_default">デフォルト</string>
   <string name="dashboard_columns_two">2</string>
-  <string name="dashboard_columns_tablet_default">既定</string>
+  <string name="dashboard_columns_tablet_default">デフォルト</string>
   <string name="dashboard_columns_three">3</string>
   <string name="dashboard_columns_four">4</string>
   <string name="dashboard_colums_resize_title">画面の向きの調節</string>
@@ -366,7 +366,7 @@
   <string name="notification_light_general_title">一般設定</string>
   <string name="notification_light_applist_title">アプリ</string>
   <string name="notification_light_use_custom">カスタム値を使用</string>
-  <string name="notification_light_default_value">既定</string>
+  <string name="notification_light_default_value">デフォルト</string>
   <string name="notification_light_screen_on">画面オン時に点灯</string>
   <string name="notification_light_zen_mode">マナーモード時は点灯させる</string>
   <string name="notification_light_use_multiple_leds">複数のLED</string>
@@ -475,7 +475,7 @@
   <string name="delete_profile">プロファイルを削除</string>
   <string name="profile_name">名前</string>
   <string name="string_seconds">秒</string>
-  <string name="string_default">既定</string>
+  <string name="string_default">デフォルト</string>
   <string name="action_filter">フィルター</string>
   <string name="doze_settings_applied">設定を適用しました</string>
   <string name="DESC_INACTIVE_TIMEOUT">これは端末が単独で放置されているかどうかを判断するためにモーションセンサーを調べ始める、非アクティブになってからの時間です。 私たちは、画面オフの時はいつでも重要なモーションセンサーを継続的に実行したくないという理由だけで、非アクティブになった直後にこれを行うわけではありません。</string>
@@ -560,7 +560,7 @@
   <string name="omni_theme_select_summary">インストールされたOmniテーマを参照して選択</string>
   <string name="keys_action_notifications">通知</string>
   <string name="battery_style_text">テキストのみ</string>
-  <string name="battery_style_default">既定</string>
+  <string name="battery_style_default">デフォルト</string>
   <string name="battery_style_meter_horizontal">水平バー</string>
   <string name="battery_style_circle">円</string>
   <string name="battery_style_droid">ドロイド</string>

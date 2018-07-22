@@ -679,7 +679,7 @@
   <string name="hide_lockscreen_icon_summary">Alterar a visibilidade do ícone de ecrã de bloqueio</string>
   <string name="lockscreen_weather_title">Mostrar condições meteorológicas</string>
   <string name="lockscreen_weather_summary">Mostrar a condição meteorológica atual e a temperatura</string>
-  <string name="lockscreen_items_aod_info_title">Esta configuração de visibilidae também se aplica à visualização de ambiente</string>
+  <string name="lockscreen_items_aod_info_title">Esta configuração de visibilidade também se aplica à visualização ambiente</string>
   <string name="system_proxi_check_enabled_title">Verificação de proximidade</string>
   <string name="system_proxi_check_enabled_summary">Verificar o sensor de proximidade antes de executar eventos dos botões de ligar/desligar e de volume</string>
   <string name="aspect_ratio_apps_enabled_title">Ativar dimensionamento</string>
