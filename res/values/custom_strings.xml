@@ -212,8 +212,6 @@
     <string name="navigation_bar_show_summary">Force enable navigation bar</string>
     <string name="hardware_keys_disable_title">Disable keys</string>
     <string name="hardware_keys_disable_summary">Force disable hardware keys</string>
-    <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
-    <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
 
     <string name="navbar_title">Navigation bar</string>
     <string name="navbar_recents_style_title">Recents style</string>
@@ -796,4 +794,9 @@
 
     <string name="splitscreen_force_systembar_enabled_title">Force show system bars in splitscreen</string>
     <string name="splitscreen_force_systembar_enabled_summary"></string>
+
+    <string name="gesture_settings_title">Gestures</string>
+    <string name="gesture_settings_info">Available gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center\n\n\nWorks best with navigation bar disabled.</string>
+    <string name="use_bottom_gesture_title">Navigation gestures</string>
+    <string name="use_bottom_gesture_summary">Use bottom swipe up gestures for navigation</string>
 </resources>
