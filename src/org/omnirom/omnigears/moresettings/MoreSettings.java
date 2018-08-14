@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2017 The OmniROM Project
+ *  Copyright (C) 2017-2018 The OmniROM Project
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -49,10 +49,8 @@ public class MoreSettings extends SettingsPreferenceFragment implements OnPrefer
     private static final String TAG = "MoreSettings";
     private static final String KEY_SHOW_DASHBOARD_COLUMNS = "show_dashboard_columns";
     private static final String KEY_HIDE_DASHBOARD_SUMMARY = "hide_dashboard_summary";
-    private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
 
     private SharedPreferences mAppPreferences;
-    private ListPreference mScreenOffAnimation;
 
     @Override
     public int getMetricsCategory() {
@@ -88,25 +86,10 @@ public class MoreSettings extends SettingsPreferenceFragment implements OnPrefer
                 return true;
             }
         });
-
-        mScreenOffAnimation = (ListPreference) findPreference(KEY_SCREEN_OFF_ANIMATION);
-        int screenOffAnimation = Settings.Global.getInt(getContentResolver(),
-                Settings.Global.SCREEN_OFF_ANIMATION, 0);
-
-        mScreenOffAnimation.setValue(Integer.toString(screenOffAnimation));
-        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
-        mScreenOffAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mScreenOffAnimation) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mScreenOffAnimation.findIndexOfValue((String) newValue);
-            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[index]);
-            Settings.Global.putInt(getContentResolver(), Settings.Global.SCREEN_OFF_ANIMATION, value);
-            return true;
-        }
         return false;
     }
 

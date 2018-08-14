@@ -52,30 +52,9 @@ import com.android.internal.util.omni.DeviceUtils;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener, Indexable {
 
-    private static final String CATEGORY_KEYS = "button_keys";
-    private static final String CATEGORY_OTHER = "button_other";
-    private static final String CATEGORY_POWER = "button_power";
-    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
-    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
     private static final String NAVIGATION_BAR_RECENTS_STYLE = "navbar_recents_style";
-    private static final String LONG_PRESS_RECENTS_ACTION = "long_press_recents_action";
-    private static final String LONG_PRESS_HOME_ACTION = "long_press_home_action";
-    private static final String DOUBLE_PRESS_HOME_ACTION = "double_press_home_action";
-    private static final String BUTTON_BACK_KILL_TIMEOUT = "button_back_kill_timeout";
-    private static final String KEY_BUTTON_LIGHT = "button_brightness";
-    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
-    private static final String SYSTEM_PROXI_CHECK_ENABLED = "system_proxi_check_enabled";
 
     private ListPreference mNavbarRecentsStyle;
-    private ListPreference mLongPressRecentsAction;
-    private ListPreference mLongPressHomeAction;
-    private ListPreference mDoublePressHomeAction;
-    private SwitchPreference mEnableNavBar;
-    private SwitchPreference mDisabkeHWKeys;
-    private ListPreference mBackKillTimeout;
-    private Preference mButtonLight;
-    private FingerprintManager mFingerprintManager;
-    private SwitchPreference mFingerprintVib;
 
     @Override
     public int getMetricsCategory() {
@@ -90,112 +69,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        final int deviceKeys = getResources().getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
-        final boolean buttonLights = getResources().getBoolean(
-                com.android.internal.R.bool.config_button_brightness_support);
-        final PreferenceCategory keysCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
-        final PreferenceCategory otherCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHER);
-        final PreferenceCategory powerCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
-
-        mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
-        mDisabkeHWKeys = (SwitchPreference) prefScreen.findPreference(KEYS_DISABLE_HW_KEY);
-        mButtonLight = prefScreen.findPreference(KEY_BUTTON_LIGHT);
-
-        // No keys or no dedicated HW home/nav keys
-        if (deviceKeys == 0 || deviceKeys % 8 == 0) {
-            keysCategory.removePreference(mDisabkeHWKeys);
-        } else {
-            boolean hardwareKeysDisable = Settings.System.getInt(resolver,
-                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
-            mDisabkeHWKeys.setChecked(hardwareKeysDisable);
-        }
-        if (!buttonLights || deviceKeys == 0) {
-            keysCategory.removePreference(mButtonLight);
-        }
-
-        boolean showNavBarDefault = DeviceUtils.deviceSupportNavigationBar(getActivity());
-        boolean showNavBar = Settings.System.getInt(resolver,
-                Settings.System.NAVIGATION_BAR_SHOW, showNavBarDefault ? 1 : 0) == 1;
-        mEnableNavBar.setChecked(showNavBar);
 
         mNavbarRecentsStyle = (ListPreference) findPreference(NAVIGATION_BAR_RECENTS_STYLE);
         int recentsStyle = Settings.System.getInt(resolver,
-                Settings.System.NAVIGATION_BAR_RECENTS, 0);
+                Settings.System.OMNI_NAVIGATION_BAR_RECENTS, 0);
 
         mNavbarRecentsStyle.setValue(Integer.toString(recentsStyle));
         mNavbarRecentsStyle.setSummary(mNavbarRecentsStyle.getEntry());
         mNavbarRecentsStyle.setOnPreferenceChangeListener(this);
-
-        mLongPressRecentsAction = (ListPreference) findPreference(LONG_PRESS_RECENTS_ACTION);
-        int longPressRecentsAction = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_LONG_PRESS_RECENTS, 0);
-
-        mLongPressRecentsAction.setValue(Integer.toString(longPressRecentsAction));
-        mLongPressRecentsAction.setSummary(mLongPressRecentsAction.getEntry());
-        mLongPressRecentsAction.setOnPreferenceChangeListener(this);
-
-        // for navbar devices default is always assist LONG_PRESS_HOME_ASSIST = 2
-        int defaultLongPressOnHomeBehavior = (deviceKeys == 0) ? 2 : getResources().getInteger(com.android.internal.R.integer.config_longPressOnHomeBehavior);
-        mLongPressHomeAction = (ListPreference) findPreference(LONG_PRESS_HOME_ACTION);
-        int longPressHomeAction = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_LONG_PRESS_HOME, defaultLongPressOnHomeBehavior);
-
-        mBackKillTimeout = (ListPreference) findPreference(BUTTON_BACK_KILL_TIMEOUT);
-        final int backKillTimeoutDefault = getResources().getInteger(com.android.internal.R.integer.config_backKillTimeout);
-        final int backKillTimeout = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_BACK_KILL_TIMEOUT, backKillTimeoutDefault);
-
-        mBackKillTimeout.setValue(Integer.toString(backKillTimeout));
-        mBackKillTimeout.setSummary(mBackKillTimeout.getEntry());
-        mBackKillTimeout.setOnPreferenceChangeListener(this);
-
-        mLongPressHomeAction.setValue(Integer.toString(longPressHomeAction));
-        mLongPressHomeAction.setSummary(mLongPressHomeAction.getEntry());
-        mLongPressHomeAction.setOnPreferenceChangeListener(this);
-
-        int defaultDoublePressOnHomeBehavior = getResources().getInteger(com.android.internal.R.integer.config_doubleTapOnHomeBehavior);
-        mDoublePressHomeAction = (ListPreference) findPreference(DOUBLE_PRESS_HOME_ACTION);
-        int doublePressHomeAction = Settings.System.getInt(resolver,
-                Settings.System.BUTTON_DOUBLE_PRESS_HOME, defaultDoublePressOnHomeBehavior);
-
-        mDoublePressHomeAction.setValue(Integer.toString(doublePressHomeAction));
-        mDoublePressHomeAction.setSummary(mDoublePressHomeAction.getEntry());
-        mDoublePressHomeAction.setOnPreferenceChangeListener(this);
-
-        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
-            otherCategory.removePreference(mFingerprintVib);
-        } else {
-            mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
-                    Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
-            mFingerprintVib.setOnPreferenceChangeListener(this);
-        }
-
-        boolean supportPowerButtonProxyCheck = getResources().getBoolean(com.android.internal.R.bool.config_proxiSensorWakupCheck);
-        SwitchPreference proxyCheckPreference = (SwitchPreference) findPreference(SYSTEM_PROXI_CHECK_ENABLED);
-        if (!supportPowerButtonProxyCheck) {
-            powerCategory.removePreference(proxyCheckPreference);
-        }
     }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mEnableNavBar) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_SHOW, checked ? 1:0);
-            return true;
-        } else if (preference == mDisabkeHWKeys) {
-            boolean checked = ((SwitchPreference)preference).isChecked();
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
-            return true;
-        }
         return super.onPreferenceTreeClick(preference);
     }
 
@@ -211,36 +96,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             }
             int index = mNavbarRecentsStyle.findIndexOfValue((String) newValue);
             mNavbarRecentsStyle.setSummary(mNavbarRecentsStyle.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(), Settings.System.NAVIGATION_BAR_RECENTS, value);
-            return true;
-        } else if (preference == mLongPressRecentsAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mLongPressRecentsAction.findIndexOfValue((String) newValue);
-            mLongPressRecentsAction.setSummary(mLongPressRecentsAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(), Settings.System.BUTTON_LONG_PRESS_RECENTS, value);
-            return true;
-        } else if (preference == mLongPressHomeAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mLongPressHomeAction.findIndexOfValue((String) newValue);
-            mLongPressHomeAction.setSummary(mLongPressHomeAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(), Settings.System.BUTTON_LONG_PRESS_HOME, value);
-            return true;
-        } else if (preference == mDoublePressHomeAction) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mDoublePressHomeAction.findIndexOfValue((String) newValue);
-            mDoublePressHomeAction.setSummary(mDoublePressHomeAction.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(), Settings.System.BUTTON_DOUBLE_PRESS_HOME, value);
-            return true;
-        } else if (preference == mBackKillTimeout) {
-            int value = Integer.valueOf((String) newValue);
-            int index = mBackKillTimeout.findIndexOfValue((String) newValue);
-            mBackKillTimeout.setSummary(mBackKillTimeout.getEntries()[index]);
-            Settings.System.putInt(getContentResolver(), Settings.System.BUTTON_BACK_KILL_TIMEOUT, value);
-            return true;
-        } else if (preference == mFingerprintVib) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
+            Settings.System.putInt(getContentResolver(), Settings.System.OMNI_NAVIGATION_BAR_RECENTS, value);
             return true;
         }
         return false;
@@ -297,13 +153,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     ArrayList<String> result = new ArrayList<String>();
-                    final Resources res = context.getResources();
+                    /*final Resources res = context.getResources();
                     final int deviceKeys = res.getInteger(
                             com.android.internal.R.integer.config_deviceHardwareKeys);
 
                     if (deviceKeys == 0) {
                         result.add(CATEGORY_KEYS);
-                    }
+                    }*/
                     return result;
                 }
             };

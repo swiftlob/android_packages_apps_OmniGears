@@ -19,70 +19,10 @@
     android:title="@string/header_category_omni">
 
     <Preference
-        android:key="style_settings_new"
-        android:title="@string/style_settings_title"
-        android:summary="@string/style_settings_summary"
-        android:icon="@drawable/ic_settings_style"
-        android:fragment="org.omnirom.omnigears.interfacesettings.StyleSettings" />
-
-    <Preference
-        android:key="device_parts"
-        android:title="@string/omni_device_parts"
-        android:icon="@drawable/ic_settings_omnigears"
-        android:fragment="org.omnirom.device.DeviceParts" />
-
-    <Preference
         android:key="button_settings"
         android:title="@string/button_settings_title"
         android:icon="@drawable/ic_settings_buttons"
         android:fragment="org.omnirom.omnigears.ButtonSettings" />
-
-    <Preference
-        android:key="bars_settings"
-        android:title="@string/custom_bars_settings_title"
-        android:icon="@drawable/ic_bars_tile"
-        android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings" />
-
-    <Preference
-        android:key="lockscreen_settings"
-        android:title="@string/lockscreen_category_title"
-        android:icon="@drawable/ic_lockscreen_tile"
-        android:fragment="org.omnirom.omnigears.interfacesettings.LockscreenSettings" />
-
-    <Preference
-        android:key="rotation_settings"
-        android:title="@string/display_rotation_title"
-        android:summary="@string/display_rotation_summary"
-        android:icon="@drawable/ic_display_rotation_tile"
-        android:fragment="org.omnirom.omnigears.DisplayRotation" />
-
-    <Preference
-        android:key="led_settings"
-        android:title="@string/battery_light_settings_title"
-        android:icon="@drawable/ic_settings_leds"
-        android:fragment="org.omnirom.omnigears.batterylight.BatteryLightSettings" />
-
-    <Preference
-        android:key="event_service_settings"
-        android:title="@string/event_service_settings_title"
-        android:icon="@drawable/ic_settings_event_service">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="org.omnirom.omnibrain"
-            android:targetClass="org.omnirom.omnibrain.OmniBrainActivity" />
-    </Preference>
-
-    <Preference
-        android:key="omnijaws_settings"
-        android:icon="@drawable/ic_qs_weather_default_on"
-        android:title="@string/weather_title"
-        android:fragment="org.omnirom.omnigears.moresettings.OmniJawsSettings" />
-
-    <Preference
-        android:key="gesture_settings"
-        android:icon="@drawable/ic_settings_gestures"
-        android:title="@string/gesture_settings_title"
-        android:fragment="org.omnirom.omnigears.GestureSettings" />
 
     <Preference
         android:key="more_settings"
@@ -90,4 +30,5 @@
         android:icon="@drawable/ic_settings_more"
         android:fragment="org.omnirom.omnigears.moresettings.MoreSettings"
         android:order="11" />
+
 </PreferenceScreen>

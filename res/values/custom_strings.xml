@@ -799,4 +799,11 @@
     <string name="gesture_settings_info">Available gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center\n\n\nWorks best with navigation bar disabled.</string>
     <string name="use_bottom_gesture_title">Navigation gestures</string>
     <string name="use_bottom_gesture_summary">Use bottom swipe up gestures for navigation</string>
+
+    <string name="header_category_omni">OmniGears</string>
+    <string name="omni_dashboard_summary">Omnify your device</string>
+    <string name="button_settings_title">Buttons</string>
+    <string name="columns_menu">Columns layout</string>
+    <string name="hide_summary_menu">Hide summary</string>
+    <string name="more_settings_title">More</string>
 </resources>

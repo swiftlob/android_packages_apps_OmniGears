@@ -23,11 +23,6 @@
             android:key="category_other"
             android:title="@string/other_category">
 
-            <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
-                android:key="volume_dialog_headers"
-                android:title="@string/volume_dialog_headers_title"
-                android:summary="@string/volume_dialog_headers_summary"
-                android:defaultValue="true" />
             <SwitchPreference
                 android:key="show_dashboard_columns"
                 android:title="@string/show_dashboard_columns_title"
@@ -41,53 +36,4 @@
 
         </PreferenceCategory>
 
-        <PreferenceCategory
-            android:key="category_system"
-            android:title="@string/system_category">
-
-            <Preference
-                android:key="time_in_state"
-                android:title="@string/time_in_state_title"
-                android:summary="@string/time_in_state_summary"
-                android:fragment="org.omnirom.omnigears.system.TimeInState" />
-
-            <Preference
-                android:key="doze_settings"
-                android:title="@string/doze_settings_title"
-                android:summary="@string/doze_settings_summary"
-                android:fragment="org.omnirom.omnigears.system.DozeSettings" />
-
-            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
-                android:key="show_cpu_overlay"
-                android:title="@string/show_cpu_title"
-                android:summary="@string/show_cpu_summary"
-                android:defaultValue="false" />
-
-            <Preference
-                android:key="volume_steps"
-                android:title="@string/volume_steps_title"
-                android:summary="@string/volume_steps_summary"
-                android:fragment="org.omnirom.omnigears.system.VolumeSteps" />
-
-            <ListPreference
-                android:key="screen_off_animation"
-                android:title="@string/screen_off_animation_title"
-                android:entries="@array/screen_off_animation_entries"
-                android:entryValues="@array/screen_off_animation_values"
-                android:persistent="false"/>
-
-            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
-                android:key="wake_when_plugged_or_unplugged"
-                android:title="@string/wake_when_plugged_or_unplugged_title"
-                android:summary="@string/wake_when_plugged_or_unplugged_summary"
-                android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
-
-            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
-                android:key="captive_portal_mode"
-                android:title="@string/captive_portal_mode_title"
-                android:summary="@string/captive_portal_mode_summary"
-                android:defaultValue="true"
-                android:persistent="true" />
-
-        </PreferenceCategory>
 </PreferenceScreen>

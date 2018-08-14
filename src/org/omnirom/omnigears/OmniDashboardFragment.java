@@ -66,11 +66,6 @@ public class OmniDashboardFragment extends DashboardFragment {
         return R.xml.omni_dashboard_fragment;
     }
 
-    @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-        return null;
-    }
-
     private static boolean isDevicePartsSupported(Context context) {
         boolean devicePartsSupported = false;
         try {
