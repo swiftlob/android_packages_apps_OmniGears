@@ -50,14 +50,19 @@ import com.android.internal.util.omni.OmniSwitchConstants;
 import com.android.internal.util.omni.PackageUtils;
 import com.android.internal.util.omni.DeviceUtils;
 
+import org.omnirom.omnilib.preference.SystemSettingSwitchPreference;
+
 public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener, Indexable {
 
+    private static final String CATEGORY_KEYS = "button_keys";
     private static final String CATEGORY_OTHER = "button_other";
     private static final String CATEGORY_POWER = "button_power";
+    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
     private static final String NAVIGATION_BAR_RECENTS_STYLE = "navbar_recents_style";
     private static final String SYSTEM_PROXI_CHECK_ENABLED = "system_proxi_check_enabled";
 
     private ListPreference mNavbarRecentsStyle;
+    private SystemSettingSwitchPreference mEnableNavBar;
 
     @Override
     public int getMetricsCategory() {
@@ -72,10 +77,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final PreferenceCategory keysCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
         final PreferenceCategory otherCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHER);
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
+
+        boolean showNavBarDefault = DeviceUtils.deviceSupportNavigationBar(getActivity());
+        boolean showNavBar = Settings.System.getInt(resolver,
+                Settings.System.OMNI_NAVIGATION_BAR_SHOW, showNavBarDefault ? 1 : 0) == 1;
+        mEnableNavBar = (SystemSettingSwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
+        mEnableNavBar.setChecked(showNavBar);
 
         mNavbarRecentsStyle = (ListPreference) findPreference(NAVIGATION_BAR_RECENTS_STYLE);
         int recentsStyle = Settings.System.getInt(resolver,
