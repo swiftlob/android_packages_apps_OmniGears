@@ -806,4 +806,6 @@
     <string name="hide_summary_menu">Hide summary</string>
     <string name="more_settings_title">More</string>
     <string name="omni_device_parts">Device features</string>
+    <string name="style_settings_title">Style</string>
+    <string name="style_settings_summary">Wallpapers and other swag</string>
 </resources>
