@@ -38,6 +38,12 @@
         android:fragment="org.omnirom.omnigears.ButtonSettings" />
 
     <Preference
+        android:key="gesture_settings"
+        android:icon="@drawable/ic_settings_gestures_omni"
+        android:title="@string/gesture_settings_title"
+        android:fragment="org.omnirom.omnigears.GestureSettings" />
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"
