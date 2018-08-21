@@ -62,7 +62,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String SYSTEM_PROXI_CHECK_ENABLED = "system_proxi_check_enabled";
 
     private ListPreference mNavbarRecentsStyle;
-    private SystemSettingSwitchPreference mEnableNavBar;
+    private SwitchPreference mEnableNavBar;
 
     @Override
     public int getMetricsCategory() {
@@ -84,10 +84,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
 
+        mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
+
         boolean showNavBarDefault = DeviceUtils.deviceSupportNavigationBar(getActivity());
         boolean showNavBar = Settings.System.getInt(resolver,
                 Settings.System.OMNI_NAVIGATION_BAR_SHOW, showNavBarDefault ? 1 : 0) == 1;
-        mEnableNavBar = (SystemSettingSwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
         mEnableNavBar.setChecked(showNavBar);
 
         mNavbarRecentsStyle = (ListPreference) findPreference(NAVIGATION_BAR_RECENTS_STYLE);
@@ -107,6 +108,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mEnableNavBar) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.OMNI_NAVIGATION_BAR_SHOW, checked ? 1:0);
+            return true;
+        }
         return super.onPreferenceTreeClick(preference);
     }
 

@@ -22,11 +22,11 @@
         android:key="button_keys"
         android:title="@string/button_keys_title" >
 
-        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
+        <SwitchPreference
             android:key="navigation_bar_show"
             android:title="@string/navigation_bar_show_title"
             android:summary="@string/navigation_bar_show_summary"
-            android:defaultValue="false" />
+            android:persistent="false" />
 
     </PreferenceCategory>
 
