@@ -38,6 +38,12 @@
         <PreferenceCategory
             android:key="category_system"
             android:title="@string/system_category">
+
+            <Preference 
+                android:key="wakelock_blocker" 
+                android:fragment="org.omnirom.omnigears.moresettings.WakeLockBlocker" 
+                android:title="@string/wakelock_blocker_title" 
+                android:summary="@string/wakelock_blocker_summary" />
             
             <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
                 android:key="recents_tasks_visible_disable"
@@ -57,6 +63,6 @@
                 android:summary="@string/captive_portal_mode_summary"
                 android:defaultValue="true"
                 android:persistent="true" />
-
+ 
         </PreferenceCategory>
 </PreferenceScreen>
