@@ -50,6 +50,12 @@
         android:fragment="org.omnirom.omnigears.GestureSettings" />
 
     <Preference
+        android:key="led_settings"
+        android:title="@string/batterylight_title"
+        android:icon="@drawable/ic_settings_leds"
+        android:fragment="org.omnirom.omnigears.batterylight.BatteryLightSettings" />
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"
