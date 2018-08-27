@@ -808,4 +808,6 @@
     <string name="omni_device_parts">Device features</string>
     <string name="style_settings_title">Style</string>
     <string name="style_settings_summary">Wallpapers and other swag</string>
+    <string name="custom_bars_settings_title">Bars</string>
+
 </resources>
