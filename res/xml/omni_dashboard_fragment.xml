@@ -56,6 +56,12 @@
         android:fragment="org.omnirom.omnigears.batterylight.BatteryLightSettings" />
 
     <Preference
+        android:key="omnijaws_settings"
+        android:icon="@drawable/ic_qs_weather_default_on"
+        android:title="@string/weather_title"
+        android:fragment="org.omnirom.omnigears.moresettings.OmniJawsSettings" />
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"
