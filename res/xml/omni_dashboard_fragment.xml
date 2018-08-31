@@ -44,6 +44,12 @@
         android:fragment="org.omnirom.omnigears.interfacesettings.BarsSettings" />
 
     <Preference
+        android:key="lockscreen_settings"
+        android:title="@string/lockscreen_category_title"
+        android:icon="@drawable/ic_lockscreen_tile"
+        android:fragment="org.omnirom.omnigears.interfacesettings.LockscreenItemSettings" />
+
+    <Preference
         android:key="gesture_settings"
         android:icon="@drawable/ic_settings_gestures_omni"
         android:title="@string/gesture_settings_title"
