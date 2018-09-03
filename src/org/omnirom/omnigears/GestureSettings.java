@@ -46,7 +46,7 @@ public class GestureSettings extends SettingsPreferenceFragment implements Index
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.gesture_settings);
-        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.gesture_settings_info);
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.gesture_settings_info_new);
     }
 
     @Override
