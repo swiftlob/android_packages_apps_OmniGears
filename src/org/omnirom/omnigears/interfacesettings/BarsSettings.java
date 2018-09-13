@@ -73,7 +73,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
 
         mQsPanelAlpha = (SeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
         int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
-                Settings.System.OMNI_QS_PANEL_BG_ALPHA, 221);
+                Settings.System.OMNI_QS_PANEL_BG_ALPHA, 255);
         mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
 
