@@ -40,6 +40,12 @@
             android:dependency="battery_light_enabled"
             android:defaultValue="false" />
 
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
+            android:key="battery_light_allow_on_dnd"
+            android:title="@string/notification_light_zen_mode"
+            android:dependency="battery_light_enabled"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
