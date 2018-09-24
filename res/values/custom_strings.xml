@@ -816,4 +816,7 @@
     <string name="use_old_mobiletype_title">Use old mobile type style</string>
     <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
 
+    <string name="recents_tasks_visible_disable_title">Disable recent app limits</string>
+    <string name="recents_tasks_visible_disable_summary">Show all recent apps without time or size limitations</string>
+
 </resources>

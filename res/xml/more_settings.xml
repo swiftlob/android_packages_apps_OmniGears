@@ -35,5 +35,14 @@
                 android:persistent="false" />
 
         </PreferenceCategory>
-
+        <PreferenceCategory
+            android:key="category_system"
+            android:title="@string/system_category">
+            
+            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
+                android:key="recents_tasks_visible_disable"
+                android:title="@string/recents_tasks_visible_disable_title"
+                android:summary="@string/recents_tasks_visible_disable_summary"
+                android:defaultValue="false" />
+        </PreferenceCategory>
 </PreferenceScreen>
