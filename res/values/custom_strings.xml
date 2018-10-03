@@ -787,8 +787,8 @@
     <string name="event_service_settings_title">Events</string>
 
     <!-- QuickSettings Panel Transparency -->
-    <string name="quick_settings_category">Quick Settings</string>
-    <string name="qs_panel_alpha_title">Quick Settings opacity</string>
+    <string name="quick_settings_category">Quick settings</string>
+    <string name="qs_panel_alpha_title">Quick settings opacity</string>
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
 
     <string name="splitscreen_force_systembar_enabled_title">Force show system bars in splitscreen</string>
@@ -812,9 +812,11 @@
     <string name="custom_bars_settings_title">Bars</string>
 
     <!-- StatusBar -->
-    <string name="statusbar_settings_category">Status Bar</string>
+    <string name="statusbar_settings_category">Status bar</string>
     <string name="use_old_mobiletype_title">Use old mobile type style</string>
     <string name="use_old_mobiletype_summary">Merge signal and type icons</string>
+    <string name="hide_notch_title">Hide notch</string>
+    <string name="hide_notch_summary">Apps can not use the notch area</string>
 
     <string name="recents_tasks_visible_disable_title">Disable recent app limits</string>
     <string name="recents_tasks_visible_disable_summary">Show all recent apps without time or size limitations</string>
