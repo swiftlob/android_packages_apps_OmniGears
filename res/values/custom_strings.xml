@@ -821,4 +821,7 @@
     <string name="recents_tasks_visible_disable_title">Disable recent app limits</string>
     <string name="recents_tasks_visible_disable_summary">Show all recent apps without time or size limitations</string>
 
+    <!-- Display Manager -->
+    <string name="omni_display_manager">Display colors</string>
+
 </resources>
