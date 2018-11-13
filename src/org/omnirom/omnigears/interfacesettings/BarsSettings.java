@@ -49,6 +49,7 @@ import java.util.List;
 public class BarsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "BarsSettings";
+    private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String KEY_ASPECT_RATIO_APPS_ENABLED = "aspect_ratio_apps_enabled";
     private static final String KEY_ASPECT_RATIO_APPS_LIST = "aspect_ratio_apps_list";
     private static final String KEY_ASPECT_RATIO_CATEGORY = "aspect_ratio_category";
@@ -58,6 +59,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String KEY_HIDE_NOTCH = "hide_notch";
     private static final String NETWORK_TRAFFIC_ROOT = "category_network_traffic";
 
+    private ListPreference mQuickPulldown;
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
     private SeekBarPreference mQsPanelAlpha;
@@ -73,6 +75,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.bars_settings);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int quickPulldownValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.OMNI_STATUS_BAR_QUICK_QS_PULLDOWN, 0);
+        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
+        updatePulldownSummary(quickPulldownValue);
 
         mQsPanelAlpha = (SeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
         int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
@@ -124,7 +133,13 @@ public class BarsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-         if (preference == mAspectRatioAppsSelect) {
+         if (preference == mQuickPulldown) {
+            int quickPulldownValue = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.OMNI_STATUS_BAR_QUICK_QS_PULLDOWN,
+                    quickPulldownValue);
+            updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mAspectRatioAppsSelect) {
             Collection<String> valueList = (Collection<String>) newValue;
             mAspectRatioApps.setVisible(false);
             if (valueList != null) {
@@ -144,6 +159,22 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+        if (value == 0) {
+            // Quick Pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+        } else if (value == 3) {
+            // Quick Pulldown always
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary_always));
+        } else {
+            String direction = res.getString(value == 2
+                    ? R.string.quick_pulldown_left
+                    : R.string.quick_pulldown_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
+       }
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
