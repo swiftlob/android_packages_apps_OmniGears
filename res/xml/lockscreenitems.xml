@@ -43,5 +43,11 @@
         android:summary="@string/lockscreen_hide_media_summary"
         android:defaultValue="false" />
 
+    <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_qs_disabled"
+        android:title="@string/lockscreen_qs_disabled_title"
+        android:summary="@string/lockscreen_qs_disabled_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
 
