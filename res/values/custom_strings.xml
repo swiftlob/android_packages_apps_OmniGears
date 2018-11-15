@@ -304,6 +304,10 @@
     <string name="captive_portal_mode_title">Network connectivity check</string>
     <string name="captive_portal_mode_summary">Enable captive portal detection</string>
 
+    <!-- Privacy guard -->
+    <string name="app_ops_settings_title">Privacy Guard</string>
+    <string name="app_ops_settings_summary">Block app permissions</string>
+
     <!-- Wakelock blocker --> 
     <string name="wakelock_blocker_title">Wakelock Blocker</string> 
     <string name="wakelock_blocker_summary">Block system wakelocks</string> 
@@ -321,7 +325,7 @@
     <string name="alarm_list_header">Available alarms</string> 
     <string name="alarm_blocker_reload">Reload</string> 
     <string name="alarm_blocker_warning_title">Proceed with caution</string> 
-    <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string> 
+    <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
     <!-- statusbar brightness -->
     <string name="status_bar_brightness_control_title">Brightness control</string>

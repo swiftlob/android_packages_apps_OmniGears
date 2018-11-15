@@ -39,6 +39,12 @@
             android:key="category_system"
             android:title="@string/system_category">
 
+	    <Preference
+                android:key="privacy_guard_manager"
+                android:fragment="com.android.settings.privacyguard.PrivacyGuardManager"
+                android:title="@string/app_ops_settings_title"
+                android:summary="@string/app_ops_settings_summary" />
+
             <Preference 
                 android:key="wakelock_blocker" 
                 android:fragment="org.omnirom.omnigears.moresettings.WakeLockBlocker" 
@@ -50,7 +56,7 @@
                 android:fragment="org.omnirom.omnigears.moresettings.AlarmBlocker" 
                 android:title="@string/alarm_blocker" 
                 android:summary="@string/alarm_blocker_summary" />
-            
+
             <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
                 android:key="recents_tasks_visible_disable"
                 android:title="@string/recents_tasks_visible_disable_title"
