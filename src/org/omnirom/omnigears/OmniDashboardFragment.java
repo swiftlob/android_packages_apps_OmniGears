@@ -41,6 +41,7 @@ public class OmniDashboardFragment extends DashboardFragment {
     public static final String CATEGORY_OMNI = "com.android.settings.category.ia.omni";
     private static final String KEY_DEVICE_PARTS = "device_parts";
     private static final String KEY_DISPLAY_MANAGER = "display_manager";
+    private static final String KEY_BATTERY_LIGHTS = "led_settings";
 
     private static final String PACKAGE_DEVICE_PARTS = "org.omnirom.device";
     private static final String PACKAGE_DISPLAY_MANAGER = "org.omnirom.omnidisplaymanager";
@@ -56,6 +57,12 @@ public class OmniDashboardFragment extends DashboardFragment {
         }
         if (!PackageUtils.isAvailableApp(PACKAGE_DISPLAY_MANAGER, getContext())) {
             Preference pref = getPreferenceScreen().findPreference(KEY_DISPLAY_MANAGER);
+            if (pref != null) {
+                getPreferenceScreen().removePreference(pref);
+            }
+        }
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            Preference pref = getPreferenceScreen().findPreference(KEY_BATTERY_LIGHTS);
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
             }
@@ -90,8 +97,8 @@ public class OmniDashboardFragment extends DashboardFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     ArrayList<String> result = new ArrayList<String>();
-                    if (!PackageUtils.isAvailableApp(PACKAGE_DEVICE_PARTS, context)) {
-                        result.add(KEY_DEVICE_PARTS);
+                    if (!context.getResources().getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+                        result.add(KEY_BATTERY_LIGHTS);
                     }
                     return result;
                 }
