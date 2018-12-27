@@ -50,5 +50,13 @@
                 android:title="@string/show_cpu_title"
                 android:summary="@string/show_cpu_summary"
                 android:defaultValue="false" />
+
+            <org.omnirom.omnilib.preference.GlobalSettingSwitchPreference
+                android:key="captive_portal_mode"
+                android:title="@string/captive_portal_mode_title"
+                android:summary="@string/captive_portal_mode_summary"
+                android:defaultValue="true"
+                android:persistent="true" />
+
         </PreferenceCategory>
 </PreferenceScreen>

@@ -297,8 +297,8 @@
     <string name="network_traffic_enable_title">Enable</string>
 
     <!-- captive portal - connectivity check -->
-    <string name="captive_portal_mode_title">Enable captive portal</string>
-    <string name="captive_portal_mode_summary">Enable connectivity check via captive portal</string>
+    <string name="captive_portal_mode_title">Network connectivity check</string>
+    <string name="captive_portal_mode_summary">Enable captive portal detection</string>
 
     <!-- statusbar brightness -->
     <string name="status_bar_brightness_control_title">Brightness control</string>
