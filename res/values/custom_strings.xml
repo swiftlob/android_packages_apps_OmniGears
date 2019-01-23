@@ -830,4 +830,13 @@
     <!-- Display Manager -->
     <string name="omni_display_manager">Display colors</string>
 
+    <!-- Dialer Setting -->
+    <string name="dialer_settings_title">Dialer</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_connect_summary">Device vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_call_wait_summary">Device vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibrate_disconnect_summary">Device vibrate on call disconnect</string>
+
 </resources>

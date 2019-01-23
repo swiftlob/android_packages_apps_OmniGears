@@ -77,10 +77,16 @@
     </Preference>
 
     <Preference
+        android:key="dialer_settings"
+        android:title="@string/dialer_settings_title"
+        android:icon="@drawable/ic_settings_dialer"
+        android:fragment="org.omnirom.omnigears.DialerSettings" />
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"
         android:fragment="org.omnirom.omnigears.moresettings.MoreSettings"
-        android:order="11" />
+        android:order="12" />
 
 </PreferenceScreen>
