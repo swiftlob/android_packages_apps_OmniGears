@@ -19,6 +19,17 @@
         android:title="@string/button_settings_title" >
 
     <PreferenceCategory
+        android:key="button_volume_keys"
+        android:title="@string/button_volume_keys_title" >
+
+        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
+            android:key="volume_button_music_control"
+            android:title="@string/volume_button_music_control_title"
+            android:summary="@string/volume_button_music_control_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="button_keys"
         android:title="@string/button_keys_title" >
 
