@@ -83,6 +83,12 @@
         android:fragment="org.omnirom.omnigears.DialerSettings" />
 
     <Preference
+        android:key="fingerprint_settings"
+        android:title="@string/fingerprint_settings_title"
+        android:icon="@drawable/ic_settings_fingerprint"
+        android:fragment="org.omnirom.omnigears.interfacesettings.FingerprintSettings" />
+
+    <Preference
         android:key="more_settings"
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"

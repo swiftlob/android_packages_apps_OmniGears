@@ -19,6 +19,7 @@ package org.omnirom.omnigears;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.provider.SearchIndexableResource;
@@ -44,9 +45,12 @@ public class OmniDashboardFragment extends DashboardFragment {
     private static final String KEY_DISPLAY_MANAGER = "display_manager";
     private static final String KEY_BATTERY_LIGHTS = "led_settings";
     private static final String KEY_DIALER_SETTINGS = "dialer_settings";
+    private static final String KEY_FINGERPRINT_SETTINGS = "fingerprint_settings";
 
     private static final String PACKAGE_DEVICE_PARTS = "org.omnirom.device";
     private static final String PACKAGE_DISPLAY_MANAGER = "org.omnirom.omnidisplaymanager";
+
+    private FingerprintManager mFingerprintManager;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -71,6 +75,14 @@ public class OmniDashboardFragment extends DashboardFragment {
         }
         if (!Utils.isVoiceCapable(getContext())) {
             Preference pref = getPreferenceScreen().findPreference(KEY_DIALER_SETTINGS);
+            if (pref != null) {
+                getPreferenceScreen().removePreference(pref);
+            }
+        }
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
+            Preference pref = getPreferenceScreen().findPreference(KEY_FINGERPRINT_SETTINGS);
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
             }

@@ -82,12 +82,6 @@
             android:entryValues="@array/navbar_recents_style_values"
             android:persistent="false"/>
 
-        <org.omnirom.omnilib.preference.SystemSettingSwitchPreference
-            android:key="fingerprint_success_vib"
-            android:title="@string/fprint_sucess_vib_title"
-            android:summary="@string/fprint_sucess_vib_summary"
-            android:persistent="false" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

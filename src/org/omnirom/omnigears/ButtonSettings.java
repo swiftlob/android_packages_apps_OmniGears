@@ -22,7 +22,6 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -61,13 +60,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String NAVIGATION_BAR_RECENTS_STYLE = "navbar_recents_style";
     private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String SYSTEM_PROXI_CHECK_ENABLED = "system_proxi_check_enabled";
-    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
 
     private ListPreference mNavbarRecentsStyle;
     private SwitchPreference mEnableNavBar;
     private Preference mButtonLight;
-    private FingerprintManager mFingerprintManager;
-    private SwitchPreference mFingerprintVib;
+    
 
     @Override
     public int getMetricsCategory() {
@@ -118,16 +115,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         if (!DeviceUtils.deviceSupportsProximitySensor(getActivity()) || !supportPowerButtonProxyCheck) {
             powerCategory.removePreference(proxyCheckPreference);
         }
-
-        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
-            otherCategory.removePreference(mFingerprintVib);
-        } else {
-            mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
-                    Settings.System.OMNI_FINGERPRINT_SUCCESS_VIB, 1) == 1));
-            mFingerprintVib.setOnPreferenceChangeListener(this);
-        }
     }
 
     @Override
@@ -154,11 +141,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             int index = mNavbarRecentsStyle.findIndexOfValue((String) newValue);
             mNavbarRecentsStyle.setSummary(mNavbarRecentsStyle.getEntries()[index]);
             Settings.System.putInt(getContentResolver(), Settings.System.OMNI_NAVIGATION_BAR_RECENTS, value);
-            return true;
-        } else if (preference == mFingerprintVib) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.OMNI_FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
             return true;
         }
         return false;

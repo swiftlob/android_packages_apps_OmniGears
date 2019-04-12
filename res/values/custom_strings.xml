@@ -842,4 +842,8 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Auto unlock on trusted face</string>
     <string name="face_auto_unlock_summary">Automaticaly dismiss keyguard when trusted face is detected</string>
+
+    <!-- Fingerprint -->
+    <string name="fingerprint_settings_title">Fingerprint</string>
+    <string name="fingerprint_category_custom_icon">Custom icon</string>
 </resources>
