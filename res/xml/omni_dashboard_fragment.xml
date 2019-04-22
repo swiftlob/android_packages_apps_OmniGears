@@ -77,12 +77,6 @@
     </Preference>
 
     <Preference
-        android:key="dialer_settings"
-        android:title="@string/dialer_settings_title"
-        android:icon="@drawable/ic_settings_dialer"
-        android:fragment="org.omnirom.omnigears.DialerSettings" />
-
-    <Preference
         android:key="fingerprint_settings"
         android:title="@string/fingerprint_settings_title"
         android:icon="@drawable/ic_settings_fingerprint"
@@ -93,6 +87,6 @@
         android:title="@string/more_settings_title"
         android:icon="@drawable/ic_settings_more"
         android:fragment="org.omnirom.omnigears.moresettings.MoreSettings"
-        android:order="12" />
+        android:order="11" />
 
 </PreferenceScreen>

@@ -31,7 +31,6 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,7 +43,6 @@ public class OmniDashboardFragment extends DashboardFragment {
     private static final String KEY_DEVICE_PARTS = "device_parts";
     private static final String KEY_DISPLAY_MANAGER = "display_manager";
     private static final String KEY_BATTERY_LIGHTS = "led_settings";
-    private static final String KEY_DIALER_SETTINGS = "dialer_settings";
     private static final String KEY_FINGERPRINT_SETTINGS = "fingerprint_settings";
 
     private static final String PACKAGE_DEVICE_PARTS = "org.omnirom.device";
@@ -69,12 +67,6 @@ public class OmniDashboardFragment extends DashboardFragment {
         }
         if (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)) {
             Preference pref = getPreferenceScreen().findPreference(KEY_BATTERY_LIGHTS);
-            if (pref != null) {
-                getPreferenceScreen().removePreference(pref);
-            }
-        }
-        if (!Utils.isVoiceCapable(getContext())) {
-            Preference pref = getPreferenceScreen().findPreference(KEY_DIALER_SETTINGS);
             if (pref != null) {
                 getPreferenceScreen().removePreference(pref);
             }
