@@ -65,6 +65,8 @@
     <string name="button_volume_wake_summary">Pressing a volume button will wake the device</string>
     <string name="button_volume_wake_enabled_summary">Volume button wake is ON</string>
     <string name="button_volume_wake_disabled_summary">Volume button wake is OFF</string>
+    <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
+    <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
     <string name="volume_button_music_control_title">Music control</string>
     <string name="volume_button_music_control_summary">Long press volume buttons to switch tracks while screen off</string>
     <string name="keys_action_sleep">Go to sleep</string>
