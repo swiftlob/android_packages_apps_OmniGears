@@ -443,8 +443,8 @@
   <string name="wakelocks_title">WakeLock</string>
   <string name="wakelocks_summary">WakeLockの統計を表示する</string>
   <string name="system_category">システム</string>
-  <string name="custom_wall_browse_title">Omni 壁紙</string>
-  <string name="custom_wall_browse_summary">Omniブランドの壁紙を参照して設定</string>
+  <string name="custom_wall_browse_title">Omniverse 壁紙</string>
+  <string name="custom_wall_browse_summary">Omniverseブランドの壁紙を参照して設定</string>
   <string name="show_cpu_title">CPU情報を表示</string>
   <string name="show_cpu_summary">現在のCPU使用状況をオーバーレイ表示する</string>
   <string name="headset_plugged_notification_title">ヘッドセット通知</string>
@@ -555,9 +555,9 @@
   <string name="screen_off_animation_crt">ブラウン管</string>
   <string name="screen_off_animation_scale">縮小</string>
   <string name="screen_off_animation_title">スクリーンオフアニメーション</string>
-  <string name="omni_theme_select_title">Omni テーマ</string>
+  <string name="omni_theme_select_title">Omniverse テーマ</string>
   <string name="omni_theme_select_none">無効</string>
-  <string name="omni_theme_select_summary">インストールされたOmniテーマを参照して選択</string>
+  <string name="omni_theme_select_summary">インストールされたOmniverseテーマを参照して選択</string>
   <string name="keys_action_notifications">通知</string>
   <string name="battery_style_text">テキストのみ</string>
   <string name="battery_style_default">デフォルト</string>

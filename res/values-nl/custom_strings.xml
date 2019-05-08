@@ -441,8 +441,8 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Toon wakelock statistieken</string>
   <string name="system_category">Systeem</string>
-  <string name="custom_wall_browse_title">Omni achtergronden</string>
-  <string name="custom_wall_browse_summary">Blader en stel Omni achtergronden in</string>
+  <string name="custom_wall_browse_title">Omniverse achtergronden</string>
+  <string name="custom_wall_browse_summary">Blader en stel Omniverse achtergronden in</string>
   <string name="show_cpu_title">Toon CPU info</string>
   <string name="show_cpu_summary">Scherm-overlay met huidige CPU gebruik</string>
   <string name="headset_plugged_notification_title">Headset melding</string>
@@ -553,9 +553,9 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Schaal</string>
   <string name="screen_off_animation_title">Scherm-uit animatie</string>
-  <string name="omni_theme_select_title">Omni themas</string>
+  <string name="omni_theme_select_title">Omniverse themas</string>
   <string name="omni_theme_select_none">Uitgeschakeld</string>
-  <string name="omni_theme_select_summary">Blader en selecteer geïnstalleerde Omni thema\'s</string>
+  <string name="omni_theme_select_summary">Blader en selecteer geïnstalleerde Omniverse thema\'s</string>
   <string name="keys_action_notifications">Meldingen</string>
   <string name="battery_style_text">Alleen tekst</string>
   <string name="battery_style_default">Standaard</string>

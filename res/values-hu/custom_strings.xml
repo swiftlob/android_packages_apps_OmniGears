@@ -446,8 +446,8 @@
   <string name="wakelocks_title">Wakelock-ok</string>
   <string name="wakelocks_summary">Wakelock statisztika megjelenítése</string>
   <string name="system_category">Rendszer</string>
-  <string name="custom_wall_browse_title">Omni háttérképek</string>
-  <string name="custom_wall_browse_summary">Tallózás és Omni márkájú háttérképek beállítása</string>
+  <string name="custom_wall_browse_title">Omniverse háttérképek</string>
+  <string name="custom_wall_browse_summary">Tallózás és Omniverse márkájú háttérképek beállítása</string>
   <string name="show_cpu_title">CPU info megjelenítése</string>
   <string name="show_cpu_summary">Jelenlegi CPU info mutatása képernyő átfedésben</string>
   <string name="headset_plugged_notification_title">Fejhallgató értesítés</string>
@@ -558,9 +558,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Skála</string>
   <string name="screen_off_animation_title">Képernyő kikapcsolás animáció</string>
-  <string name="omni_theme_select_title">Omni témák</string>
+  <string name="omni_theme_select_title">Omniverse témák</string>
   <string name="omni_theme_select_none">Kikapcsolva</string>
-  <string name="omni_theme_select_summary">Telepített Omni témák böngészése és kiválasztása</string>
+  <string name="omni_theme_select_summary">Telepített Omniverse témák böngészése és kiválasztása</string>
   <string name="keys_action_notifications">Értesítések</string>
   <string name="battery_style_text">Csak szöveg</string>
   <string name="battery_style_default">Alapértelmezett</string>

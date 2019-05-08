@@ -402,7 +402,7 @@
   <string name="wakelocks_summary">Prikaži statistiko zaklepanja bujenja</string>
   <string name="system_category">Sistem</string>
   <string name="custom_wall_browse_title">Slike ozadja Omni</string>
-  <string name="custom_wall_browse_summary">Brskaj in nastavi sliko ozadja blagovne znamke Omni</string>
+  <string name="custom_wall_browse_summary">Brskaj in nastavi sliko ozadja blagovne znamke Omniverse</string>
   <string name="show_cpu_title">Prikaži frekvence CPE</string>
   <string name="show_cpu_summary">Prikazuj tren. uporabo CPE-ja z prekrivanjem</string>
   <string name="headset_plugged_notification_title">Obvestilo o slušalkah</string>

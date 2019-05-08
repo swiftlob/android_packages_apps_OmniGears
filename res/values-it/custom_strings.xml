@@ -443,8 +443,8 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Visualizza statistiche sui wakelock</string>
   <string name="system_category">Sistema</string>
-  <string name="custom_wall_browse_title">Sfondi di Omni</string>
-  <string name="custom_wall_browse_summary">Sfoglia e imposta sfondi proprietari di Omni</string>
+  <string name="custom_wall_browse_title">Sfondi di Omniverse</string>
+  <string name="custom_wall_browse_summary">Sfoglia e imposta sfondi proprietari di Omniverse</string>
   <string name="show_cpu_title">Mostra info CPU</string>
   <string name="show_cpu_summary">Mostra in sovraimpressione info CPU</string>
   <string name="headset_plugged_notification_title">Notifica cuffie</string>
@@ -555,9 +555,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Scala</string>
   <string name="screen_off_animation_title">Animazioni di spegnimento schermo</string>
-  <string name="omni_theme_select_title">Temi Omni</string>
+  <string name="omni_theme_select_title">Temi Omniverse</string>
   <string name="omni_theme_select_none">Disabilitato</string>
-  <string name="omni_theme_select_summary">Sfoglia e seleziona i temi Omni installati</string>
+  <string name="omni_theme_select_summary">Sfoglia e seleziona i temi Omniverse installati</string>
   <string name="keys_action_notifications">Notifiche</string>
   <string name="battery_style_text">Solo testo</string>
   <string name="battery_style_default">Predefinita</string>

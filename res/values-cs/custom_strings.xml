@@ -434,7 +434,7 @@
   <string name="no_stat_because_reset_wakelock">Stiskem tlačítka reset začnete sbírat data</string>
   <string name="no_stat_because_plugged">Odpojte prosím nabíječku, abyste mohli sbírat wakelock data</string>
   <string name="no_states_file_found">Soubor nenalezen. Je váš telefon
-        kompatibilní?\n\nPokud používáte upravenou ROM nebo jádro, 
+        kompatibilní?\n\nPokud používáte upravenou ROM nebo jádro,
         zkuste kontaktovat vývojáře, proč není soubor s protokolem
         čitelný.</string>
   <string name="deep_sleep">"Hluboký spánek"</string>
@@ -446,8 +446,8 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Zobrazit statistiky wakelocks</string>
   <string name="system_category">Systém</string>
-  <string name="custom_wall_browse_title">Omni tapety</string>
-  <string name="custom_wall_browse_summary">Procházejte a nastavte si Omni značkové tapety</string>
+  <string name="custom_wall_browse_title">Omniverse tapety</string>
+  <string name="custom_wall_browse_summary">Procházejte a nastavte si Omniverse značkové tapety</string>
   <string name="show_cpu_title">Zobrazit informace o CPU</string>
   <string name="show_cpu_summary">Překrytí displeje zobrazující aktuální informace CPU</string>
   <string name="headset_plugged_notification_title">Upozornění na připojení headsetu</string>
@@ -558,9 +558,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Měřítko</string>
   <string name="screen_off_animation_title">Animace vypnutí obrazovky</string>
-  <string name="omni_theme_select_title">Motivy Omni</string>
+  <string name="omni_theme_select_title">Motivy Omniverse</string>
   <string name="omni_theme_select_none">Zakázáno</string>
-  <string name="omni_theme_select_summary">Procházení a výběr nainstalovaných motivů Omni</string>
+  <string name="omni_theme_select_summary">Procházení a výběr nainstalovaných motivů Omniverse</string>
   <string name="keys_action_notifications">Upozornění</string>
   <string name="battery_style_text">Pouze text</string>
   <string name="battery_style_default">Výchozí</string>

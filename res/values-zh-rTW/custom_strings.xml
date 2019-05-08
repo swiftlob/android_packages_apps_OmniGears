@@ -443,8 +443,8 @@
   <string name="wakelocks_title">喚醒鎖</string>
   <string name="wakelocks_summary">顯示喚醒鎖通計資訊</string>
   <string name="system_category">系統</string>
-  <string name="custom_wall_browse_title">Omni 桌布</string>
-  <string name="custom_wall_browse_summary">瀏覽和設定 Omni 桌布</string>
+  <string name="custom_wall_browse_title">Omniverse 桌布</string>
+  <string name="custom_wall_browse_summary">瀏覽和設定 Omniverse 桌布</string>
   <string name="show_cpu_title">顯示 CPU 資訊</string>
   <string name="show_cpu_summary">在螢幕上方顯示目前的 CPU 使用量</string>
   <string name="headset_plugged_notification_title">耳機通知</string>
@@ -506,9 +506,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">比例</string>
   <string name="screen_off_animation_title">螢幕關閉動畫</string>
-  <string name="omni_theme_select_title">Omni 主題</string>
+  <string name="omni_theme_select_title">Omniverse 主題</string>
   <string name="omni_theme_select_none">停用</string>
-  <string name="omni_theme_select_summary">瀏覽並選擇已安裝的 Omni 主題</string>
+  <string name="omni_theme_select_summary">瀏覽並選擇已安裝的 Omniverse 主題</string>
   <string name="keys_action_notifications">通知</string>
   <string name="battery_style_text">純文字</string>
   <string name="battery_style_default">預設</string>

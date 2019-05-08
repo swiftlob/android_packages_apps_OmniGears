@@ -434,7 +434,7 @@
   <string name="no_stat_because_reset_wakelock">Toque em repor para começar a recolher dados de wakelocks</string>
   <string name="no_stat_because_plugged">Por favor, desligue o dispositivo do carregador para começar a recolha de dados de wakelocks</string>
   <string name="no_states_file_found">Não existem ficheiros de estado. Tem a certeza de que o seu equipamento é
-       compatível?\n\nSe estiver a utilizar uma ROM ou kernel personalizados, contacte o    
+       compatível?\n\nSe estiver a utilizar uma ROM ou kernel personalizados, contacte o
        desenvolvedor para informá-lo de que o ficheiro de estado não é legível.</string>
   <string name="deep_sleep">"Inatividade"</string>
   <string name="mt_refresh">Atualizar</string>
@@ -446,7 +446,7 @@
   <string name="wakelocks_summary">Mostrar as estatísticas de wakelocks</string>
   <string name="system_category">Sistema</string>
   <string name="custom_wall_browse_title">Imagens de fundo Omni</string>
-  <string name="custom_wall_browse_summary">Escolher e definir imagens de fundo Omni</string>
+  <string name="custom_wall_browse_summary">Escolher e definir imagens de fundo Omniverse</string>
   <string name="show_cpu_title">Mostrar informação do CPU</string>
   <string name="show_cpu_summary">Informação do CPU em sobreposição</string>
   <string name="headset_plugged_notification_title">Notificação de auscultadores ligados</string>
@@ -557,9 +557,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Escala</string>
   <string name="screen_off_animation_title">Animação ao desligar o ecrã</string>
-  <string name="omni_theme_select_title">Temas Omni</string>
+  <string name="omni_theme_select_title">Temas Omniverse</string>
   <string name="omni_theme_select_none">Desativado</string>
-  <string name="omni_theme_select_summary">Navegue e selecione temas Omni instalados</string>
+  <string name="omni_theme_select_summary">Navegue e selecione temas Omniverse instalados</string>
   <string name="keys_action_notifications">Notificações</string>
   <string name="battery_style_text">Apenas texto</string>
   <string name="battery_style_default">Padrão</string>

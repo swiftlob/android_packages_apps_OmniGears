@@ -446,8 +446,8 @@
   <string name="wakelocks_title">Ärkamislukud</string>
   <string name="wakelocks_summary">Näita ärkamisluku statistikat</string>
   <string name="system_category">Süsteem</string>
-  <string name="custom_wall_browse_title">Omni taustapildid</string>
-  <string name="custom_wall_browse_summary">Sirvi ja määra Omni-brändiga taustapilte</string>
+  <string name="custom_wall_browse_title">Omniverse taustapildid</string>
+  <string name="custom_wall_browse_summary">Sirvi ja määra Omniverse-brändiga taustapilte</string>
   <string name="show_cpu_title">Kuva protsessori info</string>
   <string name="show_cpu_summary">Ekraani ülekate, mis näitab hetkelist protsessorikasutust</string>
   <string name="headset_plugged_notification_title">Peakomplekti teade</string>
@@ -550,9 +550,9 @@
   <string name="screen_off_animation_crt">Kineskoop</string>
   <string name="screen_off_animation_scale">Skaleeri</string>
   <string name="screen_off_animation_title">Ekraani väljalülitamise animatsioon</string>
-  <string name="omni_theme_select_title">Omni teemad</string>
+  <string name="omni_theme_select_title">Omniverse teemad</string>
   <string name="omni_theme_select_none">Keelatud</string>
-  <string name="omni_theme_select_summary">Sirvi ja vali installitud Omni teemasid</string>
+  <string name="omni_theme_select_summary">Sirvi ja vali installitud Omniverse teemasid</string>
   <string name="keys_action_notifications">Teated</string>
   <string name="battery_style_text">Ainult tekst</string>
   <string name="battery_style_default">Vaikimisi</string>

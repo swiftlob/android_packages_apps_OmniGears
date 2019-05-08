@@ -446,8 +446,8 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Mostra les estadístiques dels wakelocks</string>
   <string name="system_category">Sistema</string>
-  <string name="custom_wall_browse_title">Fons de pantalla d\'Omni</string>
-  <string name="custom_wall_browse_summary">Navega i estableix un fons de pantalla marca Omni</string>
+  <string name="custom_wall_browse_title">Fons de pantalla d\'Omniverse</string>
+  <string name="custom_wall_browse_summary">Navega i estableix un fons de pantalla marca Omniverse</string>
   <string name="show_cpu_title">Mostra la informació de la CPU</string>
   <string name="show_cpu_summary">Pantalla superposada amb la informació actual de la CPU</string>
   <string name="headset_plugged_notification_title">Avís d\'auricular</string>
@@ -558,9 +558,9 @@
   <string name="screen_off_animation_crt">CRT</string>
   <string name="screen_off_animation_scale">Escala</string>
   <string name="screen_off_animation_title">Animació d\'apagat de pantalla</string>
-  <string name="omni_theme_select_title">Temes de l\'Omni</string>
+  <string name="omni_theme_select_title">Temes de l\'Omniverse</string>
   <string name="omni_theme_select_none">Inhabilitat</string>
-  <string name="omni_theme_select_summary">Navegueu i seleccioneu pels temes de l\'Omni instal·lats</string>
+  <string name="omni_theme_select_summary">Navegueu i seleccioneu pels temes de l\'Omniverse instal·lats</string>
   <string name="keys_action_notifications">Avisos</string>
   <string name="battery_style_text">Només text</string>
   <string name="battery_style_default">Per defecte</string>

@@ -440,8 +440,8 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Affiche les stats de wakelock</string>
   <string name="system_category">Système</string>
-  <string name="custom_wall_browse_title">Fonds d\'écran «Omni»</string>
-  <string name="custom_wall_browse_summary">Parcourir et définir les Fonds d\'écran siglé Omni</string>
+  <string name="custom_wall_browse_title">Fonds d\'écran «Omniverse»</string>
+  <string name="custom_wall_browse_summary">Parcourir et définir les Fonds d\'écran siglé Omniverse</string>
   <string name="show_cpu_title">Afficher les infos CPU</string>
   <string name="show_cpu_summary">Affiche les stats et les ressources utilisées par le CPU</string>
   <string name="headset_plugged_notification_title">Notification de connexion des écouteurs</string>
