@@ -264,8 +264,6 @@
   <string name="mt_refresh">Päivitä</string>
   <string name="mt_share">Jaa</string>
   <string name="mt_reset">Nollaa</string>
-  <string name="system_category">Järjestelmä</string>
-  <string name="custom_wall_browse_title">Omniverse taustakuvat</string>
   <!-- Display : Rotation -->
   <string name="category_display">Näyttö</string>
   <string name="display_rotation_unit">astetta</string>

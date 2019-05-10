@@ -441,8 +441,6 @@ Schakel het tonen van het weer in het notificatiepaneel in</string>
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Toon wakelock statistieken</string>
   <string name="system_category">Systeem</string>
-  <string name="custom_wall_browse_title">Omniverse achtergronden</string>
-  <string name="custom_wall_browse_summary">Blader en stel Omniverse achtergronden in</string>
   <string name="show_cpu_title">Toon CPU info</string>
   <string name="show_cpu_summary">Scherm-overlay met huidige CPU gebruik</string>
   <string name="headset_plugged_notification_title">Headset melding</string>

@@ -446,8 +446,6 @@
   <string name="wakelocks_title">Wakelocklar</string>
   <string name="wakelocks_summary">Wakelock istatistiklerini göster</string>
   <string name="system_category">Sistem</string>
-  <string name="custom_wall_browse_title">Omniverse duvar kâğıtları</string>
-  <string name="custom_wall_browse_summary">Omniverse duvar kâğıtlarına göz atın ve ayarlayın</string>
   <string name="show_cpu_title">CPU bilgisini göster</string>
   <string name="show_cpu_summary">Mevcûd işlemci bilgisini gösteren yardımcı grafik</string>
   <string name="headset_plugged_notification_title">Kulaklık bildirimi</string>

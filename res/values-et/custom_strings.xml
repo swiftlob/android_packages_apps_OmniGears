@@ -446,8 +446,6 @@
   <string name="wakelocks_title">Ärkamislukud</string>
   <string name="wakelocks_summary">Näita ärkamisluku statistikat</string>
   <string name="system_category">Süsteem</string>
-  <string name="custom_wall_browse_title">Omniverse taustapildid</string>
-  <string name="custom_wall_browse_summary">Sirvi ja määra Omniverse-brändiga taustapilte</string>
   <string name="show_cpu_title">Kuva protsessori info</string>
   <string name="show_cpu_summary">Ekraani ülekate, mis näitab hetkelist protsessorikasutust</string>
   <string name="headset_plugged_notification_title">Peakomplekti teade</string>

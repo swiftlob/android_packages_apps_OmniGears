@@ -446,8 +446,6 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Zobrazit statistiky wakelocks</string>
   <string name="system_category">Systém</string>
-  <string name="custom_wall_browse_title">Omniverse tapety</string>
-  <string name="custom_wall_browse_summary">Procházejte a nastavte si Omniverse značkové tapety</string>
   <string name="show_cpu_title">Zobrazit informace o CPU</string>
   <string name="show_cpu_summary">Překrytí displeje zobrazující aktuální informace CPU</string>
   <string name="headset_plugged_notification_title">Upozornění na připojení headsetu</string>

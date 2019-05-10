@@ -445,8 +445,6 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Mostrar as estatísticas de wakelocks</string>
   <string name="system_category">Sistema</string>
-  <string name="custom_wall_browse_title">Imagens de fundo Omni</string>
-  <string name="custom_wall_browse_summary">Escolher e definir imagens de fundo Omniverse</string>
   <string name="show_cpu_title">Mostrar informação do CPU</string>
   <string name="show_cpu_summary">Informação do CPU em sobreposição</string>
   <string name="headset_plugged_notification_title">Notificação de auscultadores ligados</string>

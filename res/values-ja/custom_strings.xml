@@ -443,8 +443,6 @@
   <string name="wakelocks_title">WakeLock</string>
   <string name="wakelocks_summary">WakeLockの統計を表示する</string>
   <string name="system_category">システム</string>
-  <string name="custom_wall_browse_title">Omniverse 壁紙</string>
-  <string name="custom_wall_browse_summary">Omniverseブランドの壁紙を参照して設定</string>
   <string name="show_cpu_title">CPU情報を表示</string>
   <string name="show_cpu_summary">現在のCPU使用状況をオーバーレイ表示する</string>
   <string name="headset_plugged_notification_title">ヘッドセット通知</string>

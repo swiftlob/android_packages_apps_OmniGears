@@ -412,7 +412,6 @@
   <string name="mt_reset">Redefinir</string>
   <string name="wakelocks_title">Wakelocks</string>
   <string name="system_category">Sistema</string>
-  <string name="custom_wall_browse_title">Papeis de parede Omniverse</string>
   <!-- Display : Rotation -->
   <string name="category_display">Tela</string>
   <string name="display_rotation_disabled">Desabilitar</string>

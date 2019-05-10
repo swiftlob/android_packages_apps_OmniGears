@@ -443,8 +443,6 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Visualizza statistiche sui wakelock</string>
   <string name="system_category">Sistema</string>
-  <string name="custom_wall_browse_title">Sfondi di Omniverse</string>
-  <string name="custom_wall_browse_summary">Sfoglia e imposta sfondi proprietari di Omniverse</string>
   <string name="show_cpu_title">Mostra info CPU</string>
   <string name="show_cpu_summary">Mostra in sovraimpressione info CPU</string>
   <string name="headset_plugged_notification_title">Notifica cuffie</string>

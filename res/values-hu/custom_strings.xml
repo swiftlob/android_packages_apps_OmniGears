@@ -446,8 +446,6 @@
   <string name="wakelocks_title">Wakelock-ok</string>
   <string name="wakelocks_summary">Wakelock statisztika megjelenítése</string>
   <string name="system_category">Rendszer</string>
-  <string name="custom_wall_browse_title">Omniverse háttérképek</string>
-  <string name="custom_wall_browse_summary">Tallózás és Omniverse márkájú háttérképek beállítása</string>
   <string name="show_cpu_title">CPU info megjelenítése</string>
   <string name="show_cpu_summary">Jelenlegi CPU info mutatása képernyő átfedésben</string>
   <string name="headset_plugged_notification_title">Fejhallgató értesítés</string>

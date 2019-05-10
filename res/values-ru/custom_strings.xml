@@ -441,8 +441,6 @@
   <string name="wakelocks_title">Пробуждения</string>
   <string name="wakelocks_summary">Показать статистику пробуждений</string>
   <string name="system_category">Система</string>
-  <string name="custom_wall_browse_title">Обои Omniverse</string>
-  <string name="custom_wall_browse_summary">Обзор и установка фирменных обоев Omniverse</string>
   <string name="show_cpu_title">Показать информацию о процессоре</string>
   <string name="show_cpu_summary">Отображать текущее состояние процессора поверх изображения</string>
   <string name="headset_plugged_notification_title">Уведомление о подключении наушников</string>

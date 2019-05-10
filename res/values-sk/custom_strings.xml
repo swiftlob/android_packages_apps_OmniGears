@@ -446,8 +446,6 @@
   <string name="wakelocks_title">Prebudenia</string>
   <string name="wakelocks_summary">Zobraziť štatistiky prebudení</string>
   <string name="system_category">Systém</string>
-  <string name="custom_wall_browse_title">Tapety Omni</string>
-  <string name="custom_wall_browse_summary">Prehliadanie a nastavenie Omniverse tapiet</string>
   <string name="show_cpu_title">Zobraziť informácie o procesore</string>
   <string name="show_cpu_summary">Prekrytie obrazovky zobrazujúce aktuálne informácie o procesore</string>
   <string name="headset_plugged_notification_title">Upozornenie na pripojenie slúchadiel</string>

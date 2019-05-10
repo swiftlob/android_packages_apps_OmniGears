@@ -424,8 +424,6 @@
   <string name="wakelocks_title">Kuncibangun</string>
   <string name="wakelocks_summary">Tampilkan statistik kuncibangun</string>
   <string name="system_category">Sistem</string>
-  <string name="custom_wall_browse_title">Omniverse Wallpaper</string>
-  <string name="custom_wall_browse_summary">Jelajahi dan atur wallpaper bermerek Omniverse</string>
   <string name="show_cpu_title">Tampilkan info CPU</string>
   <string name="show_cpu_summary">Layar terlalu menunjukkan info CPU terkini</string>
   <string name="headset_plugged_notification_title">Notifikasi headset</string>

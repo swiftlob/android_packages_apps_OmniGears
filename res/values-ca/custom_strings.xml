@@ -446,8 +446,6 @@
   <string name="wakelocks_title">Wakelocks</string>
   <string name="wakelocks_summary">Mostra les estadístiques dels wakelocks</string>
   <string name="system_category">Sistema</string>
-  <string name="custom_wall_browse_title">Fons de pantalla d\'Omniverse</string>
-  <string name="custom_wall_browse_summary">Navega i estableix un fons de pantalla marca Omniverse</string>
   <string name="show_cpu_title">Mostra la informació de la CPU</string>
   <string name="show_cpu_summary">Pantalla superposada amb la informació actual de la CPU</string>
   <string name="headset_plugged_notification_title">Avís d\'auricular</string>

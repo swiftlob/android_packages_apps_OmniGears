@@ -443,8 +443,6 @@
   <string name="wakelocks_title">唤醒锁</string>
   <string name="wakelocks_summary">显示唤醒锁统计信息</string>
   <string name="system_category">系统</string>
-  <string name="custom_wall_browse_title">Omniverse 壁纸</string>
-  <string name="custom_wall_browse_summary">浏览并设置 Omniverse 壁纸</string>
   <string name="show_cpu_title">显示 CPU 信息</string>
   <string name="show_cpu_summary">在屏幕上显示当前 CPU 信息</string>
   <string name="headset_plugged_notification_title">耳机通知</string>

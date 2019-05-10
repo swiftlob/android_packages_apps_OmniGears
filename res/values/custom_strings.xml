@@ -508,8 +508,6 @@
     <string name="wakelocks_title">Wakelocks</string>
     <string name="wakelocks_summary">Show wakelock statistics</string>
     <string name="system_category">System</string>
-    <string name="custom_wall_browse_title">Omniverse wallpapers</string>
-    <string name="custom_wall_browse_summary">Browse and set Omniverse branded wallpapers</string>
     <string name="show_cpu_title">Show CPU info</string>
     <string name="show_cpu_summary">Screen overlay showing current CPU info</string>
     <string name="headset_plugged_notification_title">Headset notification</string>
@@ -818,7 +816,7 @@
     <string name="more_settings_title">More</string>
     <string name="omni_device_parts">Device features</string>
     <string name="style_settings_title">Style</string>
-    <string name="style_settings_summary">Wallpapers and other swag</string>
+    <string name="style_settings_summary">Themes and other swag</string>
     <string name="custom_bars_settings_title">Bars</string>
 
     <!-- StatusBar -->
